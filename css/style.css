@@ -80,8 +80,25 @@ footer ul {
 
 }
 
+#mobile-gmina {
+    display: none;
+}
+
 footer ul li {
     padding-right: 1%;
+}
+
+@media screen and (max-width: 800px) {
+    #gmina {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #mobile-gmina {
+        display: block;
+        margin-top: -40px;
+    }
 }
 
 
