@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #CBBBAB;
+}
+
+header img {
+    width: 100%;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.tekst p {
+    width: 65%;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-size: 1.1em;
+    color: #111;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.8;
+    float: left;
+}
+
+.glowa img {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    display: inline;
+}
+
+.flaga {
+    width: 32px;
+    position: absolute;
+    right: 2%;
+    top: 6%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.button button {
+    background-color: #66685B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.button button:hover {
+    background: #4A4541;
+}
+
+
+footer {
+    position: sticky;
+    padding-top: 3%;
+    ;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+
+}
+
+footer ul li {
+    padding-right: 1%;
+}
+
+
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image:hover {
+    opacity: 0.3;
+}
+
+.galeria div {
+    margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
