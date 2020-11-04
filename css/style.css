@@ -19,29 +19,27 @@ header img {
     padding: 16px 32px;
 }
 
-.tekst p {
-    width: 65%;
-    margin-left: 10%;
-    margin-right: 20%;
+.tekst {
+
     font-size: 1.1em;
     color: #111;
     font-family: 'Oswald', sans-serif;
     line-height: 1.8;
-    float: left;
+    margin: 0 2%;
+    text-align: justify;
 }
 
 .glowa img {
-    position: absolute;
+    float: right;
     right: 0;
     width: 20%;
     display: inline;
+    padding-left: 5%;
+
 }
 
 .flaga {
-    width: 32px;
-    position: absolute;
-    right: 2%;
-    top: 6%;
+float: right;
 }
 
 .button {
