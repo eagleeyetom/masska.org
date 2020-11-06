@@ -301,3 +301,8 @@ footer ul li {
         width: 100%;
     }
 }
+
+#link {
+    color: #111;
+    font-size: 1.5em;
+}
