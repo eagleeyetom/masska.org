@@ -5,7 +5,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-header img, footer img, .column img {
+header img, footer img, .column img, .opis {
     width: 100%;
 }
 
@@ -228,8 +228,14 @@ footer ul li {
         margin-left: -5%;
     }
 
+    .opis {
+        width: 110%;
+        margin: 0 -5%;
+    }
+
+
     .info ul li {
-        width: 88%
+        width: 88%;
     }
 
     #parotskympg
@@ -270,7 +276,7 @@ footer ul li {
     text-decoration: underline;
 }
 
-.opis ul{
+.opis ul {
     width: 100%;
     text-align: justify;
 }
