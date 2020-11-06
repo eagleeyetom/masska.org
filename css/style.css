@@ -5,7 +5,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-header img {
+header img, footer img, .column img {
     width: 100%;
 }
 
@@ -17,10 +17,9 @@ header img {
 }
 
 .tekst {
-
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #111;
-    line-height: 1.8;
+    line-height: 1.5;
     margin: 0 2%;
     text-align: justify;
 }
@@ -68,10 +67,6 @@ footer {
     position: relative;
     padding-top: 3%;
     ;
-}
-
-footer img {
-    width: 100%;
 }
 
 footer ul {
@@ -144,7 +139,6 @@ footer ul li {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -181,6 +175,9 @@ footer ul li {
     position: relative;
     text-align: center;
     color: white;
+    max-width: 400px;
+    max-height: 200px;
+    padding: 3%;
 }
 
 .centered {
@@ -188,7 +185,7 @@ footer ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -200,8 +197,7 @@ footer ul li {
     font-size: 32px;
     text-decoration: underline;
     text-align: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding-top: 3%;
 
 }
 
@@ -219,14 +215,19 @@ footer ul li {
 .nazwa {
     width: 50%;
     text-align: center;
-    font-size: 28px;
+    font-size: 4vw;
     font-weight: bold;
-    padding-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.foto {
-    width: 50%;
-    text-align: center;
+.nazwa ul {
+    list-style: none;
+}
+
+#tytul {
+    font-style: italic;
 }
 
 .foto img {
@@ -234,14 +235,31 @@ footer ul li {
 }
 
 @media screen and (max-width: 800px) {
+
     .nazwa, .foto {
-        width: 100%;;
+        width: 100%;
     }
 }
 
 .info {
-    text-align: center;
+    text-align: justify;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% auto;
+    line-height: 1.5;
 }
+
+.info span {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.opis ul{
+    width: 100%;
+    text-align: justify;
+}
+
+/* YouTube/Vimeo frame */
 
 .yt {
     text-align: center;
