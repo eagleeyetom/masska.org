@@ -11,7 +11,10 @@ body {
     }
 }
 
-header img, footer img, .column img, .opis {
+header img,
+footer img,
+.column img,
+.opis {
     width: 100%;
 }
 
@@ -91,9 +94,10 @@ footer ul li {
     #gmina {
         display: none;
     }
+
     footer ul {
-    padding-right: 10%;
-}
+        padding-right: 10%;
+    }
 
 }
 
@@ -241,7 +245,7 @@ footer ul li {
     }
 
     .m-p-g {
-        padding-bottom: 55em;
+        padding-bottom: 52em;
     }
 }
 
