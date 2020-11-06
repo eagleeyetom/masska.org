@@ -235,6 +235,11 @@ footer ul li {
 }
 
 @media screen and (max-width: 800px) {
+
+    .nazwa {
+    font-size: 7vw;
+    }
+
     .nazwa ul li {
         width: 100%;
         margin-left: -5%;
