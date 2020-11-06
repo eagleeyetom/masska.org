@@ -222,6 +222,22 @@ footer ul li {
     align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+    .nazwa ul li{
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .info ul li {
+        width: 88%
+    }
+
+    #parotskympg
+     {
+        padding-bottom: 1200px;
+    }
+}
+
 .nazwa ul {
     list-style: none;
 }
