@@ -307,6 +307,10 @@ footer ul li {
     iframe {
         width: 100%;
     }
+
+    #fritsch {
+        font-size: 25px;
+    }
 }
 
 #link {
