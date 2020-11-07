@@ -99,15 +99,12 @@ footer ul li {
         padding-right: 10%;
     }
 
-}
-
-@media screen and (max-width: 700px) {
     #mobile-gmina {
         display: block;
         margin-top: -40px;
     }
-}
 
+}
 
 .image {
     opacity: 1;
@@ -309,7 +306,10 @@ footer ul li {
     }
 
     #fritsch {
-        font-size: 25px;
+        font-size: 25px!important;
+    }
+    #mtt {
+        font-size: 20px!important;
     }
 }
 
