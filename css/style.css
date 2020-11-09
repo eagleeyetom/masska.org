@@ -94,7 +94,7 @@ header img {
 
 footer {
     position: relative;
-    padding-top: 3%
+    height: 100%;
 }
 
 footer ul {
@@ -116,12 +116,12 @@ footer ul li {
     }
 
     footer ul {
-        padding-right: 10%
+        padding-right: 10%;
+
     }
 
     #mobile-gmina {
         display: block;
-        margin-top: -40px
     }
 }
 
