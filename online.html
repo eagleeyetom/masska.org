@@ -31,270 +31,283 @@
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
-
-    <div class="sekcja">Spektakle / Plays</div>
-    <div class="galeria">
-        <div class="row">
-            <div class="column">
-                <a href="teatr_ubogi_relacji.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/tur/thumb.jpg" alt="">
-                        <div class="centered">Teatr Ubogi Relacji</div>
+    <section id="topbox" tabindex="4">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+        </header>
+    </section>
+    <section id="textDiv">
+        <h1 class="sekcja">Spektakle / Plays</h1>
+        <section>
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="teatr_ubogi_relacji.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/tur/thumb.jpg" alt="">
+                                <div class="centered">Teatr Ubogi Relacji</div>
+                            </div>
+                        </a>
+                        <a href="parotsky.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/parotsky/thumb.jpg" alt="Teatr Parotsky">
+                                <div class="centered">Teatr Parotsky</div>
+                            </div>
+                        </a>
+                        <a href="lo-men.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/lo-men/thumb.jpg" alt="Grupa Ło/Men">
+                                <div class="centered">Grupa Ło/Men</div>
+                            </div>
+                        </a>
+                        <a href="klub-inicjatyw-tworczych.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/klub-inicjatyw-tworczych/thumb.jpg" alt="Klub Inicjatyw Twórczych">
+                                <div class="centered">Klub Inicjatyw Twórczych</div>
+                            </div>
+                        </a>
+                        <a href="lowcy-slow.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/lowcy-slow/thumb.jpg" alt="Łowcy Słów">
+                                <div class="centered">Łowcy Słów</div>
+                            </div>
+                        </a>
+                        <a href="mat.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/mat/thumb.jpg" alt="Młodzieżowa Akademia Teatralna">
+                                <div class="centered">Młodzieżowa Akademia Teatralna</div>
+                            </div>
+                        </a>
+                        <a href="rambazamba.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/rambazamba/thumb.jpg" alt="RambaZamba Theater">
+                                <div class="centered">RambaZamba Theater</div>
+                            </div>
+                        </a>
+                        <a href="azdaks-garden.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/azdaks-garden/thumb.jpg" alt="">
+                                <div class="centered">Azdak's Garden</div>
+                            </div>
+                        </a>
+                        <a href="svezhyi-veter.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/svezhyi-veter/thumb.jpg" alt="Svezhyi Veter">
+                                <div class="centered">Свежий ветер</div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="parotsky.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/parotsky/thumb.jpg" alt="Teatr Parotsky">
-                        <div class="centered">Teatr Parotsky</div>
+                    <div class="column">
+                        <a href="bro.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/bro/thumb.jpg" alt="Biuro Rzeczy Osobistych">
+                                <div class="centered">Biuro Rzeczy Osobistych</div>
+                            </div>
+                        </a>
+                        <a href="blaumeier-atelier.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/blaumeier/thumb.jpg" alt="Blaumeier-Atelier">
+                                <div class="centered">Blaumeier-Atelier</div>
+                            </div>
+                        </a>
+                        <a href="ephata.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/ephata/thumb.jpg" alt="Teatr Ephata">
+                                <div class="centered">Teatr Ephata</div>
+                            </div>
+                        </a>
+                        <a href="loiseau-mouche.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/loiseau-mouche/thumb.jpg" alt="Compagnie de l’Oiseau-Mouche">
+                                <div class="centered">Compagnie de l’Oiseau-Mouche</div>
+                            </div>
+                        </a>
+                        <a href="danza-mobile.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/danza-mobile/thumb.jpg" alt="">
+                                <div class="centered">Compañía Danza Mobile</div>
+                            </div>
+                        </a>
+                        <a href="fritsch-company.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/fritsch/thumb.jpg" alt="Psico Ballet Maite León Foundation Fritsch Company">
+                                <div class="centered" id="fritsch">Psico Ballet Maite León Foundation Fritsch Company</div>
+                            </div>
+                        </a>
+                        <a href="kasablanka.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/kasablanka/thumb.jpg" alt="Teatr Kasablanka">
+                                <div class="centered">Teatr Kasablanka</div>
+                            </div>
+                        </a>
+                        <a href="pasjonaci.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/pasjonaci/thumb.jpg" alt="Pasjonaci">
+                                <div class="centered">Pasjonaci</div>
+                            </div>
+                        </a>
+                        <a href="nemno.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/nemno/thumb.jpg" alt="Teatr Nemno">
+                                <div class="centered">Teatr Nemno</div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="lo-men.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/lo-men/thumb.jpg" alt="Grupa Ło/Men">
-                        <div class="centered">Grupa Ło/Men</div>
+                    <div class="column">
+                        <a href="przebudzeni.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/przebudzeni/thumb.jpg" alt="Teatr Przebudzeni">
+                                <div class="centered">Teatr Przebudzeni</div>
+                            </div>
+                        </a>
+                        <a href="san.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/san/thumb.jpg" alt="Teatr S.A.N.">
+                                <div class="centered">Teatr S.A.N.</div>
+                            </div>
+                        </a>
+                        <a href="visage.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/visage/thumb.jpg" alt="The Visage Movement Theatre">
+                                <div class="centered">The Visage Movement Theatre</div>
+                            </div>
+                        </a>
+                        <a href="mtt.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/mtt/thumb.jpg" alt="Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych">
+                                <div class="centered" id="mtt">Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych</div>
+                            </div>
+                        </a>
+                        <a href="walny.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/walny/thumb.jpg" alt="Walny Teatr">
+                                <div class="centered">Walny Teatr</div>
+                            </div>
+                        </a>
+                        <a href="mimoto-spektakl.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/mimoto/thumb.jpg" alt=">Teatr MIMOTO">
+                                <div class="centered">Teatr MIMOTO</div>
+                            </div>
+                        </a>
+                        <a href="kasablanka.html">
+                            <div class="zdjecie">
+                                <img src="img/night.jpg" alt="Teatr Kasablanka">
+                                <div class="centered">Teatr 7</div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="zdjecie">
+                                <img src="img/night.jpg" alt="">
+                                <div class="centered">Teatr 8</div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="zdjecie">
+                                <img src="img/night.jpg" alt="">
+                                <div class="centered">Teatr 9</div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="klub-inicjatyw-tworczych.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/klub-inicjatyw-tworczych/thumb.jpg" alt="Klub Inicjatyw Twórczych">
-                        <div class="centered">Klub Inicjatyw Twórczych</div>
-                    </div>
-                </a>
-                <a href="lowcy-slow.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/lowcy-slow/thumb.jpg" alt="Łowcy Słów">
-                        <div class="centered">Łowcy Słów</div>
-                    </div>
-                </a>
-                <a href="mat.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/mat/thumb.jpg" alt="Młodzieżowa Akademia Teatralna">
-                        <div class="centered">Młodzieżowa Akademia Teatralna</div>
-                    </div>
-                </a>
-                <a href="rambazamba.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/rambazamba/thumb.jpg" alt="RambaZamba Theater">
-                        <div class="centered">RambaZamba Theater</div>
-                    </div>
-                </a>
-                <a href="azdaks-garden.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/azdaks-garden/thumb.jpg" alt="">
-                        <div class="centered">Azdak's Garden</div>
-                    </div>
-                </a>
-                <a href="svezhyi-veter.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/svezhyi-veter/thumb.jpg" alt="Svezhyi Veter">
-                        <div class="centered">Свежий ветер</div>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="bro.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/bro/thumb.jpg" alt="Biuro Rzeczy Osobistych">
-                        <div class="centered">Biuro Rzeczy Osobistych</div>
-                    </div>
-                </a>
-                <a href="blaumeier-atelier.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/blaumeier/thumb.jpg" alt="Blaumeier-Atelier">
-                        <div class="centered">Blaumeier-Atelier</div>
-                    </div>
-                </a>
-                <a href="ephata.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/ephata/thumb.jpg" alt="Teatr Ephata">
-                        <div class="centered">Teatr Ephata</div>
-                    </div>
-                </a>
-                <a href="loiseau-mouche.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/loiseau-mouche/thumb.jpg" alt="Compagnie de l’Oiseau-Mouche">
-                        <div class="centered">Compagnie de l’Oiseau-Mouche</div>
-                    </div>
-                </a>
-                <a href="danza-mobile.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/danza-mobile/thumb.jpg" alt="">
-                        <div class="centered">Compañía Danza Mobile</div>
-                    </div>
-                </a>
-                <a href="fritsch-company.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/fritsch/thumb.jpg" alt="Psico Ballet Maite León Foundation Fritsch Company">
-                        <div class="centered" id="fritsch">Psico Ballet Maite León Foundation Fritsch Company</div>
-                    </div>
-                </a>
-                <a href="kasablanka.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/kasablanka/thumb.jpg" alt="Teatr Kasablanka">
-                        <div class="centered">Teatr Kasablanka</div>
-                    </div>
-                </a>
-                <a href="pasjonaci.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/pasjonaci/thumb.jpg" alt="Pasjonaci">
-                        <div class="centered">Pasjonaci</div>
-                    </div>
-                </a>
-                <a href="nemno.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/nemno/thumb.jpg" alt="Teatr Nemno">
-                        <div class="centered">Teatr Nemno</div>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="przebudzeni.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/przebudzeni/thumb.jpg" alt="Teatr Przebudzeni">
-                        <div class="centered">Teatr Przebudzeni</div>
-                    </div>
-                </a>
-                <a href="san.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/san/thumb.jpg" alt="Teatr S.A.N.">
-                        <div class="centered">Teatr S.A.N.</div>
-                    </div>
-                </a>
-                <a href="visage.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/visage/thumb.jpg" alt="The Visage Movement Theatre">
-                        <div class="centered">The Visage Movement Theatre</div>
-                    </div>
-                </a>
-                <a href="mtt.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/mtt/thumb.jpg" alt="Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych" >
-                        <div class="centered" id="mtt">Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych</div>
-                    </div>
-                </a>
-                <a href="walny.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/walny/thumb.jpg" alt="Walny Teatr">
-                        <div class="centered">Walny Teatr</div>
-                    </div>
-                </a>
-                <a href="mimoto-spektakl.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/mimoto/thumb.jpg" alt=">Teatr MIMOTO">
-                        <div class="centered">Teatr MIMOTO</div>
-                    </div>
-                </a>
-                <a href="kasablanka.html">
-                    <div class="zdjecie">
-                        <img src="img/night.jpg" alt="Teatr Kasablanka">
-                        <div class="centered">Teatr 7</div>
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="zdjecie">
-                        <img src="img/night.jpg" alt="">
-                        <div class="centered">Teatr 8</div>
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="zdjecie">
-                        <img src="img/night.jpg" alt="">
-                        <div class="centered">Teatr 9</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="sekcja">Koncert / Concert</div>
-
-    <div class="galeria">
-        <div class="row">
-            <div class="column">
-                <a href="remont-pomp.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/remont-pomp/thumb.jpg" alt="Remont Pomp">
-                        <div class="centered">Remont Pomp</div>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <div class="zdjecie">
                 </div>
             </div>
-            <div class="column">
-                <div class="zdjecie">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sekcja">Słuchowisko / Audio Theatre</div>
-
-    <div class="galeria">
-        <div class="row">
-            <div class="column">
-                <a href="mimoto-sluchowisko.html">
-                    <div class="zdjecie">
-                        <img src="img/teatr/mimoto/thumb.jpg" alt="Teatr MIMOTO">
-                        <div class="centered">Teatr MIMOTO</div>
+        </section>
+        <h1 class="sekcja">Spektakle / Plays</h1>
+        <section>
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="remont-pomp.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/remont-pomp/thumb.jpg" alt="Remont Pomp">
+                                <div class="centered">Remont Pomp</div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="column">
-                <div class="zdjecie">
-                </div>
-            </div>
-            <div class="column">
-                <div class="zdjecie">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sekcja">Film "Amatorzy" / "Amateurs" movie</div>
-
-    <div class="galeria">
-        <div class="row">
-            <div class="column">
-                <a href="amatorzy.html">
-                    <div class="zdjecie">
-                        <img src="img/night.jpg" alt="">
-                        <div class="centered">Amatorzy</div>
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="column">
-                <div class="zdjecie">
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="zdjecie">
+        </section>
+        <h1 class="sekcja">Słuchowisko / Audio Theatre</h1>
+        <section>
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="mimoto-sluchowisko.html">
+                            <div class="zdjecie">
+                                <img src="img/teatr/mimoto/thumb.jpg" alt="Teatr MIMOTO">
+                                <div class="centered">Teatr MIMOTO</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-
+        <h1 class="sekcja">Film "Amatorzy" / "Amateurs" movie</h1>
+        <section>
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="amatorzy.html">
+                            <div class="zdjecie">
+                                <img src="img/night.jpg" alt="">
+                                <div class="centered">Amatorzy</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="zdjecie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <footer>
         <div>
             <ul>
                 <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
+                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
+                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
                 <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
+                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
+                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
+                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
                 <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
             </ul>
             <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
         </div>
     </footer>
+    <script src="js/all-scripts.js"></script>
 
 </body>
 

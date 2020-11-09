@@ -2,7 +2,7 @@
 
 body {
     background-color: #cbbbab;
-    font-family: 'Oswald',sans-serif
+    font-family: 'Oswald', sans-serif
 }
 
 @media only screen and (max-width:700px) {
@@ -11,12 +11,38 @@ body {
     }
 }
 
-.column img,.opis,footer img,header img {
+.accessibility {
+    float: right;
+}
+
+button {
+    background-color: #cbbbab;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: .4s;
+}
+
+button:hover {
+    background: #4a4541;
+    color: #fff;
+}
+
+#fontMinusBtn {
+    font-size: small;
+}
+
+#fontPlusBtn {
+    font-size: large;
+}
+
+.column img,
+.opis,
+footer img,
+header img {
     width: 100%
 }
 
 .text {
-    background-color: #4caf50;
     color: #fff;
     font-size: 18px;
     padding: 16px 32px;
@@ -36,7 +62,8 @@ body {
     padding-left: 5%
 }
 
-.flaga,.glowa img {
+.flaga,
+.glowa img {
     float: right
 }
 
@@ -117,7 +144,7 @@ footer ul li {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 28px
+    font-size: 3em
 }
 
 .row {
@@ -126,7 +153,8 @@ footer ul li {
     padding: 0 4px
 }
 
-.column,.galeria a {
+.column,
+.galeria a {
     justify-content: center
 }
 
@@ -158,7 +186,7 @@ footer ul li {
 
 .naglowek {
     color: #000;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 28px;
     text-transform: uppercase
 }
@@ -167,7 +195,7 @@ footer ul li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
 }
 
 .zdjecie {
@@ -176,15 +204,16 @@ footer ul li {
     color: #fff;
     max-width: 400px;
     max-height: 200px;
-    padding: 3%
+    padding: 3%;
+    font-size: 0.6em;
 }
 
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 1em;
+    transform: translate(-50%, -50%);
+
     text-transform: uppercase
 }
 
@@ -192,14 +221,11 @@ footer ul li {
     opacity: .3
 }
 
-.info span,.sekcja {
-    text-decoration: underline
-}
-
 .sekcja {
     font-size: 32px;
     text-align: center;
-    padding-top: 3%
+    padding-top: 3%;
+    text-decoration: underline
 }
 
 .profil {
@@ -215,7 +241,7 @@ footer ul li {
 .nazwa {
     width: 50%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 1em;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -224,7 +250,7 @@ footer ul li {
 
 @media screen and (max-width:800px) {
     .nazwa {
-        font-size: 7vw
+        font-size: 1.3em
     }
 
     .nazwa ul li {
@@ -237,18 +263,18 @@ footer ul li {
     }
 
     .m-p-g__thumbs-img {
-        float: none!important;
-        width: 100%!important;
-        height: 100%!important
+        float: none !important;
+        width: 100% !important;
+        height: 100% !important
     }
 }
 
 .nazwa ul {
-    list-style: none
+    list-style: none;
 }
 
 #tytul {
-    font-style: italic
+    font-style: italic;
 }
 
 .foto img {
@@ -256,12 +282,15 @@ footer ul li {
 }
 
 @media screen and (max-width:800px) {
-    .foto,.nazwa {
+
+    .foto,
+    .nazwa {
         width: 100%
     }
 }
 
-.info,.opis ul {
+.info,
+.opis ul {
     text-align: justify
 }
 
@@ -291,11 +320,11 @@ footer ul li {
     }
 
     #fritsch {
-        font-size: 25px!important
+        font-size: 25px !important
     }
 
     #mtt {
-        font-size: 20px!important
+        font-size: 20px !important
     }
 }
 
@@ -305,7 +334,58 @@ footer ul li {
 }
 
 .pion {
-    height: 100%!important;
-    max-height: 100%!important;
-    width: 100%!important
+    height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important
+}
+
+.element {
+    background-color: black;
+    transition-duration: .4s;
+}
+
+.element p {
+    color: white;
+}
+
+.element img,
+.element .button button,
+.element .centered,
+.element .sekcja {
+    filter: invert(100%);
+    transition-duration: .4s;
+}
+
+.element #fontMinusBtn,
+.element #fontPlusBtn {
+    color: white;
+    background-color: black;
+}
+
+.element.toggle {
+    background-color: #cbbbab !important;
+}
+
+.element.toggle p {
+    color: black;
+}
+
+.element.toggle img,
+.element.toggle .button button,
+.element.toggle .centered,
+.element.toggle .sekcja{
+    filter: invert(0%)
+}
+
+
+.element.toggle #fontMinusBtn,
+.element.toggle #fontPlusBtn {
+    color: black;
+    background-color: #cbbbab;
+}
+
+#kontrast {
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
 }
