@@ -77,15 +77,16 @@ header img {
 .button button {
     background-color: #66685b;
     border: 0;
-    color: #fff;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 32px;
     border-radius: 12px;
     transition-duration: .4s;
     cursor: pointer
+}
+
+.button button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .button button:hover {
@@ -137,14 +138,14 @@ footer ul li {
 
 .galeria div {
     margin: auto;
-    -webkit-text-stroke: .1px #000
+    /*-webkit-text-stroke: .1px #000*/
 }
 
 .galeria a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 3em
+    font-size: 3em;
 }
 
 .row {
