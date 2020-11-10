@@ -30,127 +30,132 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Grupa Teatralna Ło/Men</li>
+                    <li id="teatr">Grupa Teatralna Ło/Men</li>
                     <li id="tytul">Iwona księżniczka Burgunda</li>
-                    <li>Lubawa</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="tytul" lang="en">Yvonne, the princess of Burgundy</li>
+                    <li id="miasto">Lubawa</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/lo-men/1_thumb.jpg" data-full="img/teatr/lo-men/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/lo-men/2_thumb.jpg" data-full="img/teatr/lo-men/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/lo-men/3_thumb.jpg" data-full="img/teatr/lo-men/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/lo-men/1_thumb.jpg" data-full="img/teatr/lo-men/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/lo-men/2_thumb.jpg" data-full="img/teatr/lo-men/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/lo-men/3_thumb.jpg" data-full="img/teatr/lo-men/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="opis">
+        <section id="textDiv">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2013</p>
+            </div>
 
-        <div class="info">
-            <span>Rok założenia / Established</span>
-            <p>2013</p>
-        </div>
+            <div class="info">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Monika Kazimierczyk - instruktor, opiekun i reżyser (instructor, tutor and director)</li>
+                </ul>
+            </div>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Monika Kazimierczyk - instruktor, opiekun i reżyser (instructor, tutor and director)</li>
-            </ul>
-        </div>
+            <div class="info">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Grupa teatralna Ło/Men, której jestem instruktorem działa w Lubawie od 7 lat. Skupia młodzież szkół ponadpodstatowych i studentów których łaczy pasja, potrzeba tworzenia i sposób bycia. Zespół ma na koncie 5 premier, 5 maratonów teatralnych, sporo festiwali, wyjazdów i nagród.
+                </p>
+            </div>
+            <div class="info" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    The Ło/Men theater group, of which I am an instructor, has been operating in Lubawa for 7 years. It brings together youth from secondary schools and students who share a passion, the need to create and a way of being. The group had 5 premieres, participated in 5 theare marathons, many festivals, and had multiple trips and won many awards.
+                </p>
+            </div>
 
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Grupa teatralna Ło/Men, której jestem instruktorem działa w Lubawie od 7 lat. Skupia młodzież szkół ponadpodstatowych i studentów których łaczy pasja, potrzeba tworzenia i sposób bycia. Zespół ma na koncie 5 premier, 5 maratonów teatralnych, sporo festiwali, wyjazdów i nagród.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                The Ło/Men theater group, of which I am an instructor, has been operating in Lubawa for 7 years. It brings together youth from secondary schools and students who share a passion, the need to create and a way of being. The group had 5 premieres, participated in 5 theare marathons, many festivals, and had multiple trips and won many awards.
-            </p>
-        </div>
+            <div class="info">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    "Zawsze ktoś kogoś gdzieś kiedyś... Zawsze tak... Nie tego, to innego, a jak nie tamtą, to znowu jakąś, i tak ciągle...w kółko".
+                </p>
+                <p>
+                    To ponadczasowe i ważne przesłanie zaczepiło nas, zaczęło drążyć i już nie dało spokoju. Podjęliśmy próbę zmierzenia się z nim, dokonując analizy natury ludzkiej - postaci. Jaką przyjąć postawę, rolę gdy system tłamsi, unicestwia jednostkę? Gdzie są granice pozoranctwa i hejtu. Przecież "Iwona" liczy na to, że znajdzie kogoś kto myśli i czuje jak ona. A my czy jesteśmy sobą, czy raczej jesteśmy tym za kogo inni nas uważają? Pracując z tekstem Gombrowicza nieustannie próbujemy odpowiedzieć sobie na te i inne pytania Zatem, jak i co zrobić aby pozostać sobą? Jaki rodzaj tajemnicy rozstrzygnąć, czego się uchwycić by nie ulec i nie zginąć? Wierzymy, że podjęte przez nas wyzwanie, treść i dramaturgia spektaklu będą pretekstem do wnikliwej autorefleksji.
+                </p>
+                <p>
+                    Podsumowując będzie "nie na serio" ale o ważnych sprawach, z groteską i ironią ale o gorzkiej rzeczywistości. Spektakl „Iwona księżniczka Burgunda" na podstawie utworu W. Gombrowicza o tym samym tytule. Reżyseria - Monika Kazimierczyk
+                </p>
+            </div>
 
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                "Zawsze ktoś kogoś gdzieś kiedyś... Zawsze tak... Nie tego, to innego, a jak nie tamtą, to znowu jakąś, i tak ciągle...w kółko".
-            </p>
-            <p>
-                To ponadczasowe i ważne przesłanie zaczepiło nas, zaczęło drążyć i już nie dało spokoju. Podjęliśmy próbę zmierzenia się z nim, dokonując analizy natury ludzkiej - postaci. Jaką przyjąć postawę, rolę gdy system tłamsi, unicestwia jednostkę? Gdzie są granice pozoranctwa i hejtu. Przecież "Iwona" liczy na to, że znajdzie kogoś kto myśli i czuje jak ona. A my czy jesteśmy sobą, czy raczej jesteśmy tym za kogo inni nas uważają? Pracując z tekstem Gombrowicza nieustannie próbujemy odpowiedzieć sobie na te i inne pytania Zatem, jak i co zrobić aby pozostać sobą? Jaki rodzaj tajemnicy rozstrzygnąć, czego się uchwycić by nie ulec i nie zginąć? Wierzymy, że podjęte przez nas wyzwanie, treść i dramaturgia spektaklu będą pretekstem do wnikliwej autorefleksji.
-            </p>
-            <p>
-                Podsumowując będzie "nie na serio" ale o ważnych sprawach, z groteską i ironią ale o gorzkiej rzeczywistości. Spektakl „Iwona księżniczka Burgunda" na podstawie utworu W. Gombrowicza o tym samym tytule. Reżyseria - Monika Kazimierczyk
-            </p>
-        </div>
+            <div class="info" lang="en">
+                <h2>Description of the play</h2>
+                <p>
+                    "Always someone, somewhere, at some time... Always like this ... If not this, then another, and if not that, then another, and so on and on ... over and over"
+                </p>
+                <p>
+                    This timeless and important message caught us, began to drill down and gave us no peace. We have made an attempt to face it by analyzing human nature - the figure. What attitude to adopt when the system stifles, annihilates the individual? Where are the limits of sham and hatred? After all, "Iwona" hopes to find someone who thinks and feels like her. Are we ourselves, or are we who others think we are? Working with Gombrowicz's text, we constantly try to answer these and other questions. So, how and what to do to remain ourselves? What kind of mystery to solve, what to hold on to not succumb and not perish? We believe that the challenge we have undertaken, the content and the dramaturgy of the show will be a pretext for thorough self-reflection.
+                </p>
+                <p>
+                    In summary, it will be "not serious" but about important matters, with grotesque and irony, but about bitter reality. The performance "Ivona Princess of Burgundia" based on the work of Witold Gombrowicz of the same title. Directed by Monika Kazimierczyk
+                </p>
+            </div>
+            <div class="info">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:monikakazimierczyk@wp.pl" id="link">monikakazimierczyk@wp.pl</a></p>
+            </div>
 
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                "Always someone, somewhere, at some time... Always like this ... If not this, then another, and if not that, then another, and so on and on ... over and over"
-            </p>
-            <p>
-                This timeless and important message caught us, began to drill down and gave us no peace. We have made an attempt to face it by analyzing human nature - the figure. What attitude to adopt when the system stifles, annihilates the individual? Where are the limits of sham and hatred? After all, "Iwona" hopes to find someone who thinks and feels like her. Are we ourselves, or are we who others think we are? Working with Gombrowicz's text, we constantly try to answer these and other questions. So, how and what to do to remain ourselves? What kind of mystery to solve, what to hold on to not succumb and not perish? We believe that the challenge we have undertaken, the content and the dramaturgy of the show will be a pretext for thorough self-reflection.
-            </p>
-            <p>
-                In summary, it will be "not serious" but about important matters, with grotesque and irony, but about bitter reality. The performance "Ivona Princess of Burgundia" based on the work of Witold Gombrowicz of the same title. Directed by Monika Kazimierczyk
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:monikakazimierczyk@wp.pl" id="link">monikakazimierczyk@wp.pl</a></p>
-        </div>
-
-    </div>
+        </section>
 
 
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/TLBztp2yzkA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/TLBztp2yzkA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+        <section>
+            <footer>
+                <div>
+                    <ul>
+                        <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                        <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                        <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                        <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                        <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                        <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                        <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                        <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                    </ul>
+                    <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+                </div>
+            </footer>
+        </section>
 
-    <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+        <script src="js/material-photo-gallery.js"></script>
+        <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

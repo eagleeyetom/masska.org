@@ -8,7 +8,7 @@
 
     <meta name="author" content="Paulina Lewandowska">
 
-    <meta name="author" content="Tomasz Kondrat">
+    <title>Klub Inicjatyw Twórczych - Masska On-Line</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -30,138 +30,142 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Klub Inicjatyw Twórczych</li>
+                    <li id="teatr">Klub Inicjatyw Twórczych</li>
                     <li id="tytul">Okno</li>
-                    <li>Gdańsk</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="tytul" lang="en">The Window</li>
+                    <li id="miejsce">Gdańsk</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/klub-inicjatyw-tworczych/1_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/klub-inicjatyw-tworczych/2_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/klub-inicjatyw-tworczych/3_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/3.jpg" class="m-p-g__thumbs-img" />
+
+                    <img src="img/teatr/klub-inicjatyw-tworczych/1_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/1.jpg" class="m-p-g__thumbs-img" alt="Dwójka aktorów stojąca przy oknie" tabindex="5" />
+                    <img src="img/teatr/klub-inicjatyw-tworczych/2_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/2.jpg" class="m-p-g__thumbs-img" alt="Grupa teatralna Klub Inicjatyw Twórczych" tabindex="6" />
+                    <img src="img/teatr/klub-inicjatyw-tworczych/3_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/3.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="7" />
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2 id="established">Rok założenia / Established</h2>
+                <p>2014</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2014</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Robert Cyrta - reżyser (director)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Klub Inicjatyw Twórczych jest grupą młodych ludzi zaangażowanych w artystyczny projekt profilaktyczny, współpracujący z Gdańskim Centrum Profilaktyki Uzależnień i PaT-em tworząc prezentacje teatralne, oraz organizując Pomorski Festiwal Humoru i Teatru "HIT" w Gdańsku tworząc przestrzeń dla młodych ludzi w rozwijaniu swoich pasji artystycznych.</p>
+                <p>
+                    Miejsce i siedziba KIT-u znajduje się w Zespole Szkół Ogólnokształcących nr 12 w Gdańsku.
+                </p>
+                <p>
+                    Założyciel, instruktor teatralny i reżyser: Robert Cyrta
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="11">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Klub Inicjatyw Twórczych (Club of Creating Initiatives) is a group of young people involved in an artistic prophylactic project, in cooperation with the Gdańsk Addiction Prevention Center and PaT by creating theater presentations, and organizing the Pomeranian Festival of Humour and Theater "HIT" in Gdańsk, creating a space for young people to develop their artistic passions.
+                </p>
+
+                <p>
+                    The KIT is located in the Secondary School Complex No. 12 in Gdańsk.
+                </p>
+
+                <p>
+                    Founder, theater instructor and director: Robert Cyrta
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl oparty na tekstach Ireneusza Iredyńskiego, opowiada o trudnych relacjach małżeńskich, kiedy własne oczekiwania zaczynają rywalizować z uczuciami, miłością… Czy jesteśmy gotowi na przyjęcie prawdy o sobie, kiedy opada kurtyna mojego egoizmu...
+                </p>
+                <p>
+                    Scenariusz – Robert Cyrta i Zespół na podstawie tekstów Ireneusz Iredyńskiego pod tym samym tytułem.</p>
+                <p>
+                    Ilość aktorów: 2 osoby (Asia Majewska i Szymon Król)
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="13">
+                <h2>Description of the play</h2>
+                <p>
+                    The performance, based on the texts of Ireneusz Iredyński, tells about difficult marital relations, when our own expectations start to compete with feelings, love... Are we ready to accept the truth about ourselves when the curtain of selfishness falls...
+                </p>
+                <p>
+                    Screenplay by Robert Cyrta and the KIT based on texts by Ireneusz Iredyński under the same title.
+                </p>
+                <p>
+                    Number of actors: 2 (Asia Majewska and Szymon Król)
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
+            </div>
+
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Robert Cyrta - reżyser (director)</li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Klub Inicjatyw Twórczych jest grupą młodych ludzi zaangażowanych w artystyczny projekt profilaktyczny, współpracujący z Gdańskim Centrum Profilaktyki Uzależnień i PaT-em tworząc prezentacje teatralne, oraz organizując Pomorski Festiwal Humoru i Teatru "HIT" w Gdańsku tworząc przestrzeń dla młodych ludzi w rozwijaniu swoich pasji artystycznych.</p>
-            <p>
-                Miejsce i siedziba KIT-u znajduje się w Zespole Szkół Ogólnokształcących nr 12 w Gdańsku.
-            </p>
-            <p>
-                Założyciel, instruktor teatralny i reżyser: Robert Cyrta
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Klub Inicjatyw Twórczych (Club of Creating Initiatives) is a group of young people involved in an artistic prophylactic project, in cooperation with the Gdańsk Addiction Prevention Center and PaT by creating theater presentations, and organizing the Pomeranian Festival of Humour and Theater "HIT" in Gdańsk, creating a space for young people to develop their artistic passions.
-            </p>
-
-            <p>
-                The KIT is located in the Secondary School Complex No. 12 in Gdańsk.
-            </p>
-
-            <p>
-                Founder, theater instructor and director: Robert Cyrta
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Spektakl oparty na tekstach Ireneusza Iredyńskiego, opowiada o trudnych relacjach małżeńskich, kiedy własne oczekiwania zaczynają rywalizować z uczuciami, miłością… Czy jesteśmy gotowi na przyjęcie prawdy o sobie, kiedy opada kurtyna mojego egoizmu...
-            </p>
-            <p>
-                Scenariusz – Robert Cyrta i Zespół na podstawie tekstów Ireneusz Iredyńskiego pod tym samym tytułem.</p>
-            <p>
-                Ilość aktorów: 2 osoby (Asia Majewska i Szymon Król)
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                The performance, based on the texts of Ireneusz Iredyński, tells about difficult marital relations, when our own expectations start to compete with feelings, love... Are we ready to accept the truth about ourselves when the curtain of selfishness falls...
-            </p>
-            <p>
-                Screenplay by Robert Cyrta and the KIT based on texts by Ireneusz Iredyński under the same title.
-            </p>
-            <p>
-                Number of actors: 2 (Asia Majewska and Szymon Król)
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/vPPCMF5otO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/vPPCMF5otO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

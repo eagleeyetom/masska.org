@@ -30,141 +30,146 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Compagnie de l’Oiseau-Mouche</li>
+                    <li id="teatr">Compagnie de l’Oiseau-Mouche</li>
                     <li id="tytul">Madisoning</li>
-                    <li>Roubaix</li>
-                    <li><img src="https://www.countryflags.io/fr/flat/64.png" alt="Francja"></li>
+                    <li id="miasto">Roubaix</li>
+                    <li><img src="https://www.countryflags.io/fr/flat/64.png" alt="Francja" title="Francja" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/loiseau-mouche/1_thumb.jpg" data-full="img/teatr/loiseau-mouche/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/loiseau-mouche/2_thumb.jpg" data-full="img/teatr/loiseau-mouche/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/loiseau-mouche/3_thumb.jpg" data-full="img/teatr/loiseau-mouche/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/loiseau-mouche/1_thumb.jpg" data-full="img/teatr/loiseau-mouche/1.jpg" class="m-p-g__thumbs-img" alt="Taniec zespołu" tabindex="5" />
+                    <img src="img/teatr/loiseau-mouche/2_thumb.jpg" data-full="img/teatr/loiseau-mouche/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny taniec zespołu" tabindex="6" />
+                    <img src="img/teatr/loiseau-mouche/3_thumb.jpg" data-full="img/teatr/loiseau-mouche/3.jpg" class="m-p-g__thumbs-img pion" alt="Zdjęcie grupowe" tabinde="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis" tabindex="8">
 
-    <div class="opis">
+            <div class="info">
+                <h2>Rok założenia / Established</h2>
+                <p>1981</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>1981</p>
+            <div class="info">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Luciole Duvivier - kierownik (in charge of european projects at L’Oiseau-Mouche ensemble)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="9">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    La Compagnie de l'Oiseau-Mouche to firma założona w 1978 roku wraz z zespołem 23 profesjonalnych wykonawców niepełnosprawnych.
+                    Wysoki poziom zaangażowania naszych aktorów i jakość ich pracy dały im szansę występów w miejscach głównego nurtu, które nigdy wcześniej nie były otwarte dla wykonawców z trudnościami w uczeniu się.
+                </p>
+                <p>
+                    Projekt pozostaje wyjątkowy we Francji. Firma nie posiada stałego dyrektora artystycznego, a każda kreacja jest wynikiem spotkania z zaproszonym artystą.
+                </p>
+                <p>
+                    L'Oiseau-Mouche stworzyło 50 przedstawień, wykonanych ponad 1700 razy i jest wspierane przez francuskie Ministerstwo Kultury.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="10">
+                <h2>Description of the theatre</h2>
+                <p>
+                    La Compagnie de l’Oiseau-Mouche is a company created in 1978 with an ensemble of 23 learning-disabled professional performers.
+                    The high level of commitment of our actors and the quality of their work have created a path for them to access mainstream venues that had never been opened to learning-disabled performers before.
+                </p>
+                <p>
+                    The project remains unique in France. The company has no permanent artistic director and each creation is the result of a unique encounter with an invited artist.
+                </p>
+                <p>
+                    L’Oiseau-Mouche has created 50 shows, performed over 1,700 times and is supported by the French Ministry of Culture.
+                </p>
+            </div>
+
+            <div class="info" tabindex="11">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Madisoning to fascynujący utwór, łączący taniec madison, taniec współczesny i rytuały weselne.
+                </p>
+                <p>
+                    W Europie Zachodniej nasze pierwsze doświadczenia z tańcem to zjazdy rodzinne lub wesela; gdzie wszyscy uczymy się naszych klasyków: Kongi, Macareny... I chociaż wielu tancerzy szuka inspiracji w Stanach Zjednoczonych, Madisoning postanawia zgłębić nasze lekceważone dziedzictwo.
+                </p>
+                <p>
+                    Na scenie 4 aktorów z trudnościami w uczeniu się z zespołu l’Oiseau-Mouche prezentuje wyjątkowy balet, obsesyjnie rytmiczny, głęboko zdesynchronizowany, w którym stopy tańczą jak szalone, a ramiona wykonują macarenę. Próba zatarcia granic między folklorem rodzinnym, rytmami pop dance i tańcem współczesnym.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="12">
+                <h2>Description of the play</h2>
+                <p>
+                    Madisoning is a compelling piece, mixing madison, contemporary dance and wedding rituals.
+                </p>
+                <p>
+                    In Western Europe, our first experience with dance is through family reunions or weddings; where we all learn our classics: conga line, Macarena… And while many dancers look towards the US to find inspiration, Madisoning choses to explore our disregarded heritage.
+                </p>
+                <p>
+                    On stage, 4 learning-disabled actors from l’Oiseau-Mouche ensemble bring forth a unique ballet, obsessively rhythmic, deeply desynchronised, where the feet dance the madison while the arms do the macarena. An attempt to blur the frontiers between family folklore, pop dance beats and contemporary dance.
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:lduvivier@oiseau-mouche.org" id="link">lduvivier@oiseau-mouche.org</a></p>
+            </div>
+
         </div>
+    </section>
+    <section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Luciole Duvivier - kierownik (in charge of european projects at L’Oiseau-Mouche ensemble)</li>
-            </ul>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CzBT4dUKU-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe>
         </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                La Compagnie de l'Oiseau-Mouche to firma założona w 1978 roku wraz z zespołem 23 profesjonalnych wykonawców niepełnosprawnych.
-                Wysoki poziom zaangażowania naszych aktorów i jakość ich pracy dały im szansę występów w miejscach głównego nurtu, które nigdy wcześniej nie były otwarte dla wykonawców z trudnościami w uczeniu się.
-            </p>
-            <p>
-                Projekt pozostaje wyjątkowy we Francji. Firma nie posiada stałego dyrektora artystycznego, a każda kreacja jest wynikiem spotkania z zaproszonym artystą.
-            </p>
-            <p>
-                L'Oiseau-Mouche stworzyło 50 przedstawień, wykonanych ponad 1700 razy i jest wspierane przez francuskie Ministerstwo Kultury.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                La Compagnie de l’Oiseau-Mouche is a company created in 1978 with an ensemble of 23 learning-disabled professional performers.
-                The high level of commitment of our actors and the quality of their work have created a path for them to access mainstream venues that had never been opened to learning-disabled performers before.
-            </p>
-            <p>
-                The project remains unique in France. The company has no permanent artistic director and each creation is the result of a unique encounter with an invited artist.
-            </p>
-            <p>
-                L’Oiseau-Mouche has created 50 shows, performed over 1,700 times and is supported by the French Ministry of Culture.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Madisoning to fascynujący utwór, łączący taniec madison, taniec współczesny i rytuały weselne.
-            </p>
-            <p>
-                W Europie Zachodniej nasze pierwsze doświadczenia z tańcem to zjazdy rodzinne lub wesela; gdzie wszyscy uczymy się naszych klasyków: Kongi, Macareny... I chociaż wielu tancerzy szuka inspiracji w Stanach Zjednoczonych, Madisoning postanawia zgłębić nasze lekceważone dziedzictwo.
-            </p>
-            <p>
-                Na scenie 4 aktorów z trudnościami w uczeniu się z zespołu l’Oiseau-Mouche prezentuje wyjątkowy balet, obsesyjnie rytmiczny, głęboko zdesynchronizowany, w którym stopy tańczą jak szalone, a ramiona wykonują macarenę. Próba zatarcia granic między folklorem rodzinnym, rytmami pop dance i tańcem współczesnym.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                Madisoning is a compelling piece, mixing madison, contemporary dance and wedding rituals.
-            </p>
-            <p>
-                In Western Europe, our first experience with dance is through family reunions or weddings ; where we all learn our classics: conga line, Macarena… And while many dancers look towards the US to find inspiration, Madisoning choses to explore our disregarded heritage.
-            </p>
-            <p>
-                On stage, 4 learning-disabled actors from l’Oiseau-Mouche ensemble bring forth a unique ballet, obsessively rhythmic, deeply desynchronised, where the feet dance the madison while the arms do the macarena. An attempt to blur the frontiers between family folklore, pop dance beats and contemporary dance.
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:lduvivier@oiseau-mouche.org" id="link">lduvivier@oiseau-mouche.org</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/CzBT4dUKU-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
-
-</html>

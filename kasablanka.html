@@ -30,122 +30,126 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Teatr Kasablanka</li>
+                    <li id="teatr">Teatr Kasablanka</li>
                     <li id="tytul">Pan H.</li>
+                    <li lang="en" id="tytul">Mr. H.</li>
                     <li>Gdańsk</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/kasablanka/1_thumb.jpg" data-full="img/teatr/kasablanka/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/kasablanka/2_thumb.jpg" data-full="img/teatr/kasablanka/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/kasablanka/3_thumb.jpg" data-full="img/teatr/kasablanka/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/kasablanka/1_thumb.jpg" data-full="img/teatr/kasablanka/1.jpg" class="m-p-g__thumbs-img" alt="Kobieta pocieszająca drugą kobietę" tabindex="5" />
+                    <img src="img/teatr/kasablanka/2_thumb.jpg" data-full="img/teatr/kasablanka/2.jpg" class="m-p-g__thumbs-img" alt="Aktor trzymający tron" tabindex="6" />
+                    <img src="img/teatr/kasablanka/3_thumb.jpg" data-full="img/teatr/kasablanka/3.jpg" class="m-p-g__thumbs-img" alt="Rozmowa dwóch aktorów" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2 id="established">Rok założenia / Established</h2>
+                <p>1993</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>1993</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Arkadiusz Szczurek - pedagog (pedagogist)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Teatr Kasablanka od ponad dwudziestu lat aktywnie przekazuje szerokiej publice swoją interpretację najbardziej znanych i podziwianych dzieł mistrzów. Aktorami teatru są dorosłe osoby z niepełnosprawnością intelektualną. W swoich spektaklach teatr przemawia do widza posługując się pełnymi symboliki i skojarzeń obrazami, odczytywanymi na różnych poziomach. Muzyka i dźwięki stanowią integralną część widowiska w którym aktorzy prowadzą widza przez tajemniczy świat, który najczęściej jest skojarzeniem i swoistą interpretacją literatury.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="11">
+                <h2>Description of the theatre</h2>
+                <p>
+                    For over twenty years, the Kasablanka Theatre has been actively conveying its interpretation of the most famous and admired masterpieces to the general public. The actors of the theatre are adults with intellectual disabilities. In its performances, the theatre speaks to the viewer through images full of symbolism and associations, read on various levels. Music and sounds are an integral part of the performance in which the actors lead the viewer through a mysterious world, which is most often an association and a specific interpretation of literature.
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl "Pan H." jest kolejną próbą zmierzenia się z wielkim dziełem Wiliama Szekspira podjętą przez Teatr Kasablanka. Podobnie jak w przypadku spektakli "Makbet" oraz "Romeo i..." także i tym razem jest to impresja, przebłyski skojarzeń, kulturowych tworów narosłych wokół dramatu i samej postaci Hamleta. Granica między realnością a fantazją, rozsądkiem a szaleństwem jest płynna i potrafi niebezpiecznie się przesuwać. Powstał spektakl kameralny, wymagający od widza skupienia graniczącego z hipnotycznym transem.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="13">
+                <h2>Description of the play</h2>
+                <p>
+                    The performance "Mr. H." is another attempt to face the great work of William Shakespeare by the Kasablanka Theatre. As in the case of "Macbeth" and "Romeo and..." it is also an impression this time, flashes of associations, cultural creations growing around the drama and the character of Hamlet himself. The line between reality and fantasy, reason and madness is fluid and can move dangerously. The result is an intimate performance that requires the viewer to focus bordering on a hypnotic trance.
+                </p>
+
+                <ul style="list-style: none">
+                    <li><b>Występują / Cast:</b></li>
+                    <li>Maria Dragańczuk, Anna Frąckiewicz, Aleksandra Hloušek, Grzegorz Jankowski, Jacek Jarzembowski, Krzysztof Markiewicz, Józef Olszewski, Marcin Kapelusz</li>
+                    <li><b>Scenariusz i reżyseria / Script and directory</b></li>
+                    <li>Arkadiusz Szczurek</li>
+                </ul>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:wajdeloty.sds@wp.pl" id="link">wajdeloty.sds@wp.pl</a></p>
+            </div>
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Arkadiusz Szczurek - pedagog (pedagogist)</li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Teatr Kasablanka od ponad dwudziestu lat aktywnie przekazuje szerokiej publice swoją interpretację najbardziej znanych i podziwianych dzieł mistrzów. Aktorami teatru są dorosłe osoby z niepełnosprawnością intelektualną. W swoich spektaklach teatr przemawia do widza posługując się pełnymi symboliki i skojarzeń obrazami, odczytywanymi na różnych poziomach. Muzyka i dźwięki stanowią integralną część widowiska w którym aktorzy prowadzą widza przez tajemniczy świat, który najczęściej jest skojarzeniem i swoistą interpretacją literatury.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                For over twenty years, the Kasablanka Theatre has been actively conveying its interpretation of the most famous and admired masterpieces to the general public. The actors of the theatre are adults with intellectual disabilities. In its performances, the theatre speaks to the viewer through images full of symbolism and associations, read on various levels. Music and sounds are an integral part of the performance in which the actors lead the viewer through a mysterious world, which is most often an association and a specific interpretation of literature.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Spektakl "Pan H." jest kolejną próbą zmierzenia się z wielkim dziełem Wiliama Szekspira podjętą przez Teatr Kasablanka. Podobnie jak w przypadku spektakli "Makbet" oraz "Romeo i..." także i tym razem jest to impresja, przebłyski skojarzeń, kulturowych tworów narosłych wokół dramatu i samej postaci Hamleta. Granica między realnością a fantazją, rozsądkiem a szaleństwem jest płynna i potrafi niebezpiecznie się przesuwać. Powstał spektakl kameralny, wymagający od widza skupienia graniczącego z hipnotycznym transem.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                The performance "Mr. H." is another attempt to face the great work of William Shakespeare by the Kasablanka Theatre. As in the case of "Macbeth" and "Romeo and..." it is also an impression this time, flashes of associations, cultural creations growing around the drama and the character of Hamlet himself. The line between reality and fantasy, reason and madness is fluid and can move dangerously. The result is an intimate performance that requires the viewer to focus bordering on a hypnotic trance.
-            </p>
-
-            <ul style="list-style: none">
-                <li><b>Występują / Cast:</b></li>
-                <li>Maria Dragańczuk, Anna Frąckiewicz, Aleksandra Hloušek, Grzegorz Jankowski, Jacek Jarzembowski, Krzysztof Markiewicz, Józef Olszewski, Marcin Kapelusz</li>
-                <li><b>Scenariusz i reżyseria / Script and directory</b></li>
-                <li>Arkadiusz Szczurek</li>
-            </ul>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:wajdeloty.sds@wp.pl" id="link">wajdeloty.sds@wp.pl</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/uGV30bG0WNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/uGV30bG0WNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>
