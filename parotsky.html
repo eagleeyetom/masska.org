@@ -30,123 +30,129 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Ludowyj Amatorskij Teatr - Studia "Parostky"</li>
-                    <li id="tytul">Happy Exiles</li>
-                    <li>Kijów/Kyiv</li>
-                    <li><img src="https://www.countryflags.io/ua/flat/64.png" alt="Ukraina"></li>
+                    <li id="teatr">Ludowyj Amatorskij Teatr - Studia "Parostky"</li>
+                    <li id="tytul" lang="en">Happy Exiles</li>
+                    <li id="tytul">Szczęśliwi wygnańcy</li>
+                    <li id="miasto">Kijów/Kyiv</li>
+                    <li><img src="https://www.countryflags.io/ua/flat/64.png" alt="Ukraina" title="Ukraina" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/parotsky/1_thumb.jpg" data-full="img/teatr/parotsky/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/parotsky/2_thumb.jpg" data-full="img/teatr/parotsky/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/parotsky/3_thumb.jpg" data-full="img/teatr/parotsky/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/parotsky/1_thumb.jpg" data-full="img/teatr/parotsky/1.jpg" class="m-p-g__thumbs-img" alt="Aktorzy podczas spektaklu" tabindex="5" />
+                    <img src="img/teatr/parotsky/2_thumb.jpg" data-full="img/teatr/parotsky/2.jpg" class="m-p-g__thumbs-img" alt="Aktor w trakcie spektaklu" tabindex="6" />
+                    <img src="img/teatr/parotsky/3_thumb.jpg" data-full="img/teatr/parotsky/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2001</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2001</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Vitaliy Lyubota - dyrektor artystyczny i reżyser (art director and director) </li>
+                    <li>Anna Katerynych - nauczycielka aktorstwa, aktorka teatralna, wychowawczyni, psycholog praktyczny, pedagog społeczny (acting teacher, theatrical actress, tutor, practical psychologist, social pedagogist)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>W naszej pracy dużą wagę przykładamy do kreowania przestrzeni i poszukiwania form twórczej samorealizacji osoby z cechami rozwoju psychofizycznego i intelektualnego. Badamy wpływ kreatywności na procesy rehabilitacji tych osób.</p>
+
+                <p>Ten teatr nie jest z litości, ale dla kreatywności. Brawo, bo są tu świetni aktorzy. "Nie walczymy z naturą, staramy się ją rozwijać poprzez podnoszenie poczucia własnej wartości i chęci rozwoju”.</p>
+
+                <p>W 2009 roku Teatr-Studia "PAPOSTKI" otrzymało tytuł "Amatorskiego Zespołu Ludowego”.</p>
+            </div>
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>In our work, we attach great importance to creating space and searching for forms of creative self-realization of a person with psychophysical and intellectual development characteristics.</p>
+
+                <p>This theatre is out of pity, but for creativity. Bravo, because there are great actors here. "We do not fight nature, we try to develop it by increasing self-esteem and willingness to develop".</p>
+
+                <p>In 2009 The Parostky Theatre Studio was recognised as "Amateur Folk Group".</p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>Każdy chce mieć miejsce pod słońcem… Są ciasne miejsca pod słońcem i przestronne. Jest wiele sposobów na posiadanie własnego, wyjątkowego miejsca, ale czy wszystkie środki są uzasadnione?</p>
+
+                <p>Opowieść o sobie, o nas, o otwartości i izolacji, o... samotności, wygnaniu, SERCU, WIERZE i MIŁOŚCI.</p>
+
+                <p>Spektakl oparty jest na pomysłach i doświadczeniach samych uczniów.</p>
+            </div>
+
+            <div class="info" tabindex="13" lang="en">
+                <h2>Description of the play</h2>
+                <p>Everyone wants to have a place in the sun... There are narrow and wider places. There are many ways if getting an own, unique place, but are all means justified?</p>
+                <p>The story about yourself, about us, about openess and isolation, about... loneliness, exile, HEART, FAITH and LOVE.</p>
+                <p>The play is based on ideas and experience of pupils.</p>
+            </div>
+
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:vitalijlubota@gmail.com" id="link">vitalijlubota@gmail.com</a></p>
+            </div>
         </div>
+    </section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Vitaliy Lyubota - dyrektor artystyczny i reżyser (art director and director) </li>
-                <li>Anna Katerynych - nauczycielka aktorstwa, aktorka teatralna, wychowawczyni, psycholog praktyczny, pedagog społeczny (acting teacher, theatrical actress, tutor, practical psychologist, social pedagogist)</li>
-            </ul>
+    <section>
+        <div class="yt">
+            <iframe src="https://player.vimeo.com/video/476069354" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen tabindex="15"></iframe>
         </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>W naszej pracy dużą wagę przykładamy do kreowania przestrzeni i poszukiwania form twórczej samorealizacji osoby z cechami rozwoju psychofizycznego i intelektualnego. Badamy wpływ kreatywności na procesy rehabilitacji tych osób.</p>
-
-            <p>Ten teatr nie jest z litości, ale dla kreatywności. Brawo, bo są tu świetni aktorzy. "Nie walczymy z naturą, staramy się ją rozwijać poprzez podnoszenie poczucia własnej wartości i chęci rozwoju”.</p>
-
-            <p>W 2009 roku Teatr-Studia "PAPOSTKI" otrzymało tytuł "Amatorskiego Zespołu Ludowego”.</p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>In our work, we attach great importance to creating space and searching for forms of creative self-realization of a person with psychophysical and intellectual development characteristics.</p>
-
-            <p>This theatre is out of pity, but for creativity. Bravo, because there are great actors here. "We do not fight nature, we try to develop it by increasing self-esteem and willingness to develop".</p>
-
-            <p>In 2009 The Parostky Theatre Studio was recognised as "Amateur Folk Group".</p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>Każdy chce mieć miejsce pod słońcem… Są ciasne miejsca pod słońcem i przestronne. Jest wiele sposobów na posiadanie własnego, wyjątkowego miejsca, ale czy wszystkie środki są uzasadnione?</p>
-
-            <p>Opowieść o sobie, o nas, o otwartości i izolacji, o... samotności, wygnaniu, SERCU, WIERZE i MIŁOŚCI.</p>
-
-            <p>Spektakl oparty jest na pomysłach i doświadczeniach samych uczniów.</p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>Everyone wants to have a place in the sun... There are narrow and wider places. There are many ways if getting an own, unique place, but are all means justified?</p>
-            <p>The story about yourself, about us, about openess and isolation, about... loneliness, exile, HEART, FAITH and LOVE.</p>
-            <p>The play is based on ideas and experience of pupils.</p>
-        </div>
-
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:vitalijlubota@gmail.com" id="link">vitalijlubota@gmail.com</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe src="https://player.vimeo.com/video/476069354" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
-
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

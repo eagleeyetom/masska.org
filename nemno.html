@@ -30,196 +30,205 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Teatr NEMNO</li>
+                    <li id="teatr">Teatr NEMNO</li>
                     <li id="tytul">Czerwony kapturek</li>
+                    <li id="tytul" lang="en">Little Red Riding Hood</li>
                     <li id="tytul">&amp;</li>
                     <li id="tytul">Królowa śniegu</li>
-                    <li>Rzeszów</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="tytul" lang="en">Snow Queen</li>
+                    <li id="miasto">Rzeszów</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/nemno/4_thumb.jpg" data-full="img/teatr/nemno/4.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/nemno/5_thumb.jpg" data-full="img/teatr/nemno/5.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/nemno/6_thumb.jpg" data-full="img/teatr/nemno/6.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/nemno/1_thumb.jpg" data-full="img/teatr/nemno/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/nemno/2_thumb.jpg" data-full="img/teatr/nemno/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/nemno/3_thumb.jpg" data-full="img/teatr/nemno/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/nemno/4_thumb.jpg" data-full="img/teatr/nemno/4.jpg" class="m-p-g__thumbs-img" alt="Czerwony Kapturek i Babcia" tabindex="5" />
+                    <img src="img/teatr/nemno/5_thumb.jpg" data-full="img/teatr/nemno/5.jpg" class="m-p-g__thumbs-img" alt="Dziewczynka i ptak" tabindex="6" />
+                    <img src="img/teatr/nemno/6_thumb.jpg" data-full="img/teatr/nemno/6.jpg" class="m-p-g__thumbs-img" alt="Czerwony Kapturek" tabindex="7" />
+                    <img src="img/teatr/nemno/1_thumb.jpg" data-full="img/teatr/nemno/1.jpg" class="m-p-g__thumbs-img" alt="Fragment przedstawienia" tabindex="8" />
+                    <img src="img/teatr/nemno/2_thumb.jpg" data-full="img/teatr/nemno/2.jpg" class="m-p-g__thumbs-img" alt="Odbicie w lustrze" tabindex="9" />
+                    <img src="img/teatr/nemno/3_thumb.jpg" data-full="img/teatr/nemno/3.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment przedstawienia" tabindex="10" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="11">
+                <h2>Rok założenia / Established</h2>
+                <p>2014</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2014</p>
+            <div class="info" tabindex="12">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Henryk Hryniewicki: aktor, reżyser, scenarzysta (actor, director, script)</li>
+                    <li>Dagmara Jemioła-Hryniewicka: scenografia (script)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="13">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Teatr NEMNO powstał w 2014 roku. Na dzień dzisiejszy teatr tworzy jego pomysłodawca, aktor i reżyser spektakli Henryk Hryniewicki oraz Dagmara Jemioła – Hryniewicka, która tworzy scenografię do przedstawień. Teatr NEMNO funkcjonuje jako teatr objazdowy. Spektakle prezentowane są w różnych placówkach kulturalnych na terenie całego kraju oraz na festiwalach teatralnych w Polsce i za granicą,m.in Izmir Kukla Gunleri, Izmir, Turcja, marzec 2015 rok, FITTE Festival International de Tunis, Tunis, Tunezja, grudzień 2015 rok, Festiwal Pozytywka, Bydgoszcz, Polska, 2018 rok.
+
+                </p>
+            </div>
+            <div class="info" tabindex="14" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    The NEMNO Theatre was established in 2014. Currently, the theatre is created by its founder, actor and theater director, Henryk Hryniewicki, and Dagmara Jemioł - Hryniewicka, who creates the scenery for the performances. The NEMNO Theatre functions as a traveling theatre. Performances are presented in various cultural institutions throughout the country and at theatre festivals in Poland and abroad, including Izmir Kukla Gunleri, Izmir, Turkey, March 2015, FITTE Festival International de Tunis, Tunis, Tunisia, December 2015, Pozytywka, Bydgoszcz, Poland, 2018.
+                </p>
+            </div>
+
+            <div class="info" tabindex="15">
+                <h2>Opis sztuki <i>Czerwony Kapturek</i></h2>
+                <p>
+                    Reżyseria: Henryk Hryniewicki
+                </p>
+                <p>
+                    Scenografia: Dagmara Jemioła - Hryniewicka
+                </p>
+                <p>
+                    Muzyka: Marek Papaj</p>
+                <p>
+                    Pewien krawiec chciał uszyć nowe ubrania dla dzieci, niestety zabrakło mu materiału. Został tylko czerwony aksamit. Ten niezwykły materiał przywołuje mu wspomnienie o pewnej Babci, która bardzo kochała swoją wnuczkę. Krawiec postanawia opowiedzieć ich historię i na oczach widzów kreuje świat baśni.
+                </p>
+                <p>
+                    Spektakl inspirowany baśnią Braci Grimm.
+                </p>
+                <p>
+                    Premiera: 4 grudzień 2016 roku
+                </p>
+            </div>
+
+            <div class="info" tabindex="16" lang="en">
+                <h2>Description of <i>Little Red Riding Hood</i></h2>
+                <p>
+                    Directed by: Henryk Hryniewicki
+                </p>
+                <p>
+                    Scenography: Dagmara Jemioła - Hryniewicka
+                </p>
+                <p>
+                    Music: Marek Papaj
+                </p>
+                <p>
+                    A tailor wanted to sew new clothes for children, but unfortunately he ran out of material. Only red velvet remains. This unusual material reminds him of a Grandmother who loved her granddaughter very much. The tailor decides to tell their story and creates a world of fairy tales in front of the audience.
+                </p>
+                <p>
+                    A performance inspired by the Brothers Grimm fairy tale.
+                </p>
+                <p>
+                    Premiere: December 4th, 2016
+                </p>
+            </div>
+            <div class="info" tabindex="17">
+                <h2>Opis sztuki <i>Królowa śniegu</i></h2>
+                <p>
+                    Reżyseria: Henryk Hryniewicki
+                </p>
+                <p>
+                    Scenografia: Dagmara Jemioła - Hryniewicka
+                </p>
+                <p>
+                    Muzyka: Marek Papaj</p>
+                <p>
+                    Pewien złośliwy Czarownik skonstruował lustro, w którym wszystko co dobre i ładne rozpływało się na nic, a to co brzydkie występowało wyraźnie i stawało się jeszcze brzydsze. Któregoś dnia lustro pękło i rozsypało się na miliony okruchów szkła, które unosiły się w powietrzu. Gdy taki okruch wpadł komuś do serca stawało się ono jak kawałek lodu. Przyjdźcie zatem i posłuchajcie co wydarzyło się pewnego razu w pewnym miasteczku...
+                </p>
+                <p>
+                    Na podstawie baśni H. Ch. Andersena
+                </p>
+                <p>
+                    Premiera: 3 września 2017 roku
+                </p>
+            </div>
+
+            <div class="info" tabindex="18" lang="en">
+                <h2>Description of <i>Snow Queen</i></h2>
+                <p>
+                    Directed by: Henryk Hryniewicki
+                </p>
+                <p>
+                    Scenography: Dagmara Jemioła - Hryniewicka
+                </p>
+                <p>
+                    Music: Marek Papaj
+                </p>
+                <p>
+                    A malicious Sorcerer constructed a mirror in which everything good and pretty melted into nothing, and the ugly appeared clearly and became even uglier. One day the mirror broke and crumbled into millions of shards of glass that were floating in the air. When such a crumb fell into someone's heart it became like a piece of ice. So come and listen to what happened one time in a town...
+                </p>
+                <p>
+                    Based on a fairy tale by H. Ch. Andersen
+                </p>
+                <p>
+                    Premiere: September 3th, 2017
+                </p>
+            </div>
+            <div class="info" tabindex="19">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:teatrnemno@gmail.com" id="link">teatrnemno@gmail.com</a></p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Henryk Hryniewicki: aktor, reżyser, scenarzysta (actor, director, script)</li>
-                <li>Dagmara Jemioła-Hryniewicka: scenografia (script)</li>
-            </ul>
+    <section>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IleYMtTXGN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="20"></iframe>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6blc7HpxKL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="21"></iframe>
         </div>
+    </section>
 
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Teatr NEMNO powstał w 2014 roku. Na dzień dzisiejszy teatr tworzy jego pomysłodawca, aktor i reżyser spektakli Henryk Hryniewicki oraz Dagmara Jemioła – Hryniewicka, która tworzy scenografię do przedstawień. Teatr NEMNO funkcjonuje jako teatr objazdowy. Spektakle prezentowane są w różnych placówkach kulturalnych na terenie całego kraju oraz na festiwalach teatralnych w Polsce i za granicą,m.in Izmir Kukla Gunleri, Izmir, Turcja, marzec 2015 rok, FITTE Festival International de Tunis, Tunis, Tunezja, grudzień 2015 rok, Festiwal Pozytywka, Bydgoszcz, Polska, 2018 rok.
-
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                The NEMNO Theatre was established in 2014. Currently, the theatre is created by its founder, actor and theater director, Henryk Hryniewicki, and Dagmara Jemioł - Hryniewicka, who creates the scenery for the performances. The NEMNO Theatre functions as a traveling theatre. Performances are presented in various cultural institutions throughout the country and at theatre festivals in Poland and abroad, including Izmir Kukla Gunleri, Izmir, Turkey, March 2015, FITTE Festival International de Tunis, Tunis, Tunisia, December 2015, Pozytywka, Bydgoszcz, Poland, 2018.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis sztuki <i>Czerwony Kapturek</i></span>
-            <p>
-                Reżyseria: Henryk Hryniewicki
-            </p>
-            <p>
-                Scenografia: Dagmara Jemioła - Hryniewicka
-            </p>
-            <p>
-                Muzyka: Marek Papaj</p>
-            <p>
-                Pewien krawiec chciał uszyć nowe ubrania dla dzieci, niestety zabrakło mu materiału. Został tylko czerwony aksamit. Ten niezwykły materiał przywołuje mu wspomnienie o pewnej Babci, która bardzo kochała swoją wnuczkę. Krawiec postanawia opowiedzieć ich historię i na oczach widzów kreuje świat baśni.
-            </p>
-            <p>
-                Spektakl inspirowany baśnią Braci Grimm.
-            </p>
-            <p>
-                Premiera: 4 grudzień 2016 roku
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of <i>Little Red Riding Hood</i></span>
-            <p>
-                Directed by: Henryk Hryniewicki
-            </p>
-            <p>
-                Scenography: Dagmara Jemioła - Hryniewicka
-            </p>
-            <p>
-                Music: Marek Papaj
-            </p>
-            <p>
-                A tailor wanted to sew new clothes for children, but unfortunately he ran out of material. Only red velvet remains. This unusual material reminds him of a Grandmother who loved her granddaughter very much. The tailor decides to tell their story and creates a world of fairy tales in front of the audience.
-            </p>
-            <p>
-                A performance inspired by the Brothers Grimm fairy tale.
-            </p>
-            <p>
-                Premiere: December 4th, 2016
-            </p>
-        </div>
-        <div class="info">
-            <span>Opis sztuki <i>Królowa śniegu</i></span>
-            <p>
-                Reżyseria: Henryk Hryniewicki
-            </p>
-            <p>
-                Scenografia: Dagmara Jemioła - Hryniewicka
-            </p>
-            <p>
-                Muzyka: Marek Papaj</p>
-            <p>
-                Pewien złośliwy Czarownik skonstruował lustro, w którym wszystko co dobre i ładne rozpływało się na nic, a to co brzydkie występowało wyraźnie i stawało się jeszcze brzydsze. Któregoś dnia lustro pękło i rozsypało się na miliony okruchów szkła, które unosiły się w powietrzu. Gdy taki okruch wpadł komuś do serca stawało się ono jak kawałek lodu. Przyjdźcie zatem i posłuchajcie co wydarzyło się pewnego razu w pewnym miasteczku...
-            </p>
-            <p>
-                Na podstawie baśni H. Ch. Andersena
-            </p>
-            <p>
-                Premiera: 3 września 2017 roku
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of <i>The Snow Queen</i></span>
-            <p>
-                Directed by: Henryk Hryniewicki
-            </p>
-            <p>
-                Scenography: Dagmara Jemioła - Hryniewicka
-            </p>
-            <p>
-                Music: Marek Papaj
-            </p>
-            <p>
-                A malicious Sorcerer constructed a mirror in which everything good and pretty melted into nothing, and the ugly appeared clearly and became even uglier. One day the mirror broke and crumbled into millions of shards of glass that were floating in the air. When such a crumb fell into someone's heart it became like a piece of ice. So come and listen to what happened one time in a town...
-            </p>
-            <p>
-                Based on a fairy tale by H. Ch. Andersen
-            </p>
-            <p>
-                Premiere: September 3th, 2017
-            </p>
-        </div>
-
-
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:teatrnemno@gmail.com" id="link">teatrnemno@gmail.com</a></p>
-        </div>
-
-    </div>
-
-    <div>
-    </div>
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/IleYMtTXGN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><iframe width="560" height="315" src="https://www.youtube.com/embed/6blc7HpxKL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="22"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="23"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="24"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="25"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="26"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="27"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="28"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="29"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="30"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

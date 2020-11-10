@@ -30,140 +30,145 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Remont Pomp</li>
-                    <li>Gdańsk</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="teatr">Remont Pomp</li>
+                    <li id="miasto">Gdańsk</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/remont-pomp/1_thumb.jpg" data-full="img/teatr/remont-pomp/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/remont-pomp/2_thumb.jpg" data-full="img/teatr/remont-pomp/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/remont-pomp/3_thumb.jpg" data-full="img/teatr/remont-pomp/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/remont-pomp/1_thumb.jpg" data-full="img/teatr/remont-pomp/1.jpg" class="m-p-g__thumbs-img" alt="Fragment koncertu z zaprzyjaźnionym zespołem" tabindex="5" />
+                    <img src="img/teatr/remont-pomp/2_thumb.jpg" data-full="img/teatr/remont-pomp/2.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie z góry" tabindex="6" />
+                    <img src="img/teatr/remont-pomp/3_thumb.jpg" data-full="img/teatr/remont-pomp/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2004</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2004</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Jarek Marciszewski</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Remont Pomp - zespół grający muzykę etniczną, awangardową i improwizowaną, który powstał w 2004 roku przy Polskim Stowarzyszeniu na Rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku. Inspiracją zespołu jest muzyka etniczna z naciskiem na bogactwo muzyki afrykańskiej. Remont Pomp odkrywa także przestrzenie muzyki eksperymentalnej grając na przedmiotach na co dzień nie kojarzonych z muzyką. Jako przykład mogą służyć utwory wykonywane na stole, szklankach, kieliszkach, dzbanach czy też beczkach.
+                </p>
+                <p>
+                    Zespół ma w swoim dorobku dwie płyty. Pierwsza pt: „Złota Platyna” wydana w 2012 roku została nagrana z Mikołajem Trzaską i Majkiem Majkowskim. Kolejną płytę pt: „Pomp Power” zespół nagrał z Mikołajem Trzaską, ukazał się ona w grudniu 2016 roku nakładem wydawnictwa kilogram records. Dzięki tym spotkaniom muzyka zespołu na płytach zyskała bardziej free jazzowo, improwizowany charakter.
+                </p>
+                <p>
+                    Remont Pomp zagrał wiele koncertów w trójmieście jak i innych miastach Polski. Grał również za granicą w krajach tj: w Izrael, Niemcy, Słowacja, Irlandia Północna i Szkocja. Największym międzynarodowym osiągnięciem zespołu była ponad 2 tygodniowo trasa w Australii wraz z Mikołajem Trzaską, Rabih Behaini oraz zespołami The Useless Assembly, Tralala Blip, podczas której zespół zagrał 5 koncertów w: Sydney, Melbourne, Brisbane, Lismore i Wagga Wagga.
+                </p>
+                <p>
+                    Remont Pomp współpracował także z muzykami takimi jak: Tomasz Antonowicz, Orkiestra Klezmerska Teatru Sejneńskiego, Raphael Rogiński, Paweł Szamburski, Wacław Zimpel, Michał Górczyński, Ray Dickaty, Artur Majewski, Paweł Romańczuk (Małe Instrumenty), Olo Walicki czy Wojtek Mazolweski. Dwukrotnie zagra na Festiwalu Unsound w Krakowie.
+                </p>
+                <p>
+                    Zespół jest także odpowiedzialny za oprawę muzyczną spektakli Teatru Razem. Do tej pory wspólnie z teatrem współtworzył 12 spektakli.
+                </p>
+            </div>
+
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Remont Pomp - a band playing ethnic, avant-garde and improvised music, established in 2004 at the Polish Association for People with Intellectual Disability, Circle in Gdańsk. The band is inspired by ethnic music with an emphasis on the richness of African music. Remont Pomp also explores the spaces of experimental music by playing objects not normally associated with music. Works performed on tables, glasses, jugs or barrels can serve as examples.
+                </p>
+                <p>
+                    The band has two albums. The first, "ZŁota Platyna", released in 2012, was recorded with Mikołaj Trzaska and Majek Majkowski. The band recorded the next album "Pomp Power" with Mikołaj Trzaska, it was released in December 2016 by kilogram records. Thanks to these meetings, the band's music on the albums gained a more free jazz, improvised character.
+                </p>
+                <p>
+                    Remont Pomp played many concerts in the Tri-City and other Polish cities. They also played abroad in the following countries: Israel, Germany, Slovakia, Northern Ireland and Scotland. The band's greatest international achievement was a 2-week tour in Australia with Mikołaj Trzaska, Rabih Behaini and The Useless Assembly, Tralala Blip, during which the band played 5 concerts in: Sydney, Melbourne, Brisbane, Lismore and Wagga Wagga.
+                </p>
+                <p>
+                    Remont Pomp has also collaborated with musicians such as: Tomasz Antonowicz, Klezmer Orchestra of the Sejny Theatre, Raphael Rogiński, Paweł Szamburski, Wacław Zimpel, Michał Górczyński, Ray Dickaty, Artur Majewski, Paweł Romańczuk (Małe Instrumenty), Olo Walicki and Wojtek Mazolweski. They will play twice at the Unsound Festival in Kraków.
+                </p>
+                <p>
+                    The band is also responsible for the musical setting of the performances of the Razem Theatre. So far, they have co-created 12 performances with the theatre.
+                </p>
+            </div>
+            <div class="info" tabindex="12">
+                <h2>Muzycy / Musicians:</h2>
+                <ul>
+                    <li>Magdalena Spaleniak</li>
+                    <li>Wojciech Birtus</li>
+                    <li>Wojciech Birtus</li>
+                    <li>Sebastian Włodarek</li>
+                    <li>Jacek Cieślicki</li>
+                    <li>Jan Skiba</li>
+                    <li>Miriam Porębska</li>
+                    <li>Małgorzata Mleczko Marciszewska</li>
+                    <li>Jarosław Marciszewski </li>
+                    <li>Asia Świeczkowska</li>
+                </ul>
+            </div>
+            <div class="info" tabindex="13">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:psouu_jarek@op.pl" id="link">psouu_jarek@op.pl</a></p>
+            </div>
         </div>
-
-        <div class="info">
-            <span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Jarek Marciszewski</li>
-            </ul>
+    </section>
+    <section>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F8UuY2jCWOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="14"></iframe>
         </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Remont Pomp - zespół grający muzykę etniczną, awangardową i improwizowaną, który powstał w 2004 roku przy Polskim Stowarzyszeniu na Rzecz Osób z Niepełnosprawnością Intelektualną Koło w Gdańsku. Inspiracją zespołu jest muzyka etniczna z naciskiem na bogactwo muzyki afrykańskiej. Remont Pomp odkrywa także przestrzenie muzyki eksperymentalnej grając na przedmiotach na co dzień nie kojarzonych z muzyką. Jako przykład mogą służyć utwory wykonywane na stole, szklankach, kieliszkach, dzbanach czy też beczkach.
-            </p>
-            <p>
-                Zespół ma w swoim dorobku dwie płyty. Pierwsza pt: „Złota Platyna” wydana w 2012 roku została nagrana z Mikołajem Trzaską i Majkiem Majkowskim. Kolejną płytę pt: „Pomp Power” zespół nagrał z Mikołajem Trzaską, ukazał się ona w grudniu 2016 roku nakładem wydawnictwa kilogram records. Dzięki tym spotkaniom muzyka zespołu na płytach zyskała bardziej free jazzowo, improwizowany charakter.
-            </p>
-            <p>
-                Remont Pomp zagrał wiele koncertów w trójmieście jak i innych miastach Polski. Grał również za granicą w krajach tj: w Izrael, Niemcy, Słowacja, Irlandia Północna i Szkocja. Największym międzynarodowym osiągnięciem zespołu była ponad 2 tygodniowo trasa w Australii wraz z Mikołajem Trzaską, Rabih Behaini oraz zespołami The Useless Assembly, Tralala Blip, podczas której zespół zagrał 5 koncertów w: Sydney, Melbourne, Brisbane, Lismore i Wagga Wagga.
-            </p>
-            <p>
-                Remont Pomp współpracował także z muzykami takimi jak: Tomasz Antonowicz, Orkiestra Klezmerska Teatru Sejneńskiego, Raphael Rogiński, Paweł Szamburski, Wacław Zimpel, Michał Górczyński, Ray Dickaty, Artur Majewski, Paweł Romańczuk (Małe Instrumenty), Olo Walicki czy Wojtek Mazolweski. Dwukrotnie zagra na Festiwalu Unsound w Krakowie.
-            </p>
-            <p>
-                Zespół jest także odpowiedzialny za oprawę muzyczną spektakli Teatru Razem. Do tej pory wspólnie z teatrem współtworzył 12 spektakli.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Remont Pomp - a band playing ethnic, avant-garde and improvised music, established in 2004 at the Polish Association for People with Intellectual Disability, Circle in Gdańsk. The band is inspired by ethnic music with an emphasis on the richness of African music. Remont Pomp also explores the spaces of experimental music by playing objects not normally associated with music. Works performed on tables, glasses, jugs or barrels can serve as examples.
-            </p>
-            <p>
-                The band has two albums. The first, "ZŁota Platyna", released in 2012, was recorded with Mikołaj Trzaska and Majek Majkowski. The band recorded the next album "Pomp Power" with Mikołaj Trzaska, it was released in December 2016 by kilogram records. Thanks to these meetings, the band's music on the albums gained a more free jazz, improvised character.
-            </p>
-            <p>
-                Remont Pomp played many concerts in the Tri-City and other Polish cities. They also played abroad in the following countries: Israel, Germany, Slovakia, Northern Ireland and Scotland. The band's greatest international achievement was a 2-week tour in Australia with Mikołaj Trzaska, Rabih Behaini and The Useless Assembly, Tralala Blip, during which the band played 5 concerts in: Sydney, Melbourne, Brisbane, Lismore and Wagga Wagga.
-            </p>
-            <p>
-                Remont Pomp has also collaborated with musicians such as: Tomasz Antonowicz, Klezmer Orchestra of the Sejny Theatre, Raphael Rogiński, Paweł Szamburski, Wacław Zimpel, Michał Górczyński, Ray Dickaty, Artur Majewski, Paweł Romańczuk (Małe Instrumenty), Olo Walicki and Wojtek Mazolweski. They will play twice at the Unsound Festival in Kraków.
-            </p>
-            <p>
-                The band is also responsible for the musical setting of the performances of the Razem Theatre. So far, they have co-created 12 performances with the theatre.
-            </p>
-        </div>
-        <div class="info">
-            <span>Muzycy / Musicians:</span>
-            <ul>
-                <li>Magdalena Spaleniak</li>
-                <li>Wojciech Birtus</li>
-                <li>Wojciech Birtus</li>
-                <li>Sebastian Włodarek</li>
-                <li>Jacek Cieślicki</li>
-                <li>Jan Skiba</li>
-                <li>Miriam Porębska</li>
-                <li>Małgorzata Mleczko Marciszewska</li>
-                <li>Jarosław Marciszewski </li>
-                <li>Asia Świeczkowska</li>
-            </ul>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:psouu_jarek@op.pl" id="link">psouu_jarek@op.pl</a></p>
-        </div>
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/F8UuY2jCWOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="15"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="16"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="17"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="18"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="19"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="20"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="21"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="22"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="23"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

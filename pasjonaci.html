@@ -30,115 +30,121 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Pasjonaci</li>
+                    <li id="teatr">Pasjonaci</li>
                     <li id="tytul">Historia pewnej miłości</li>
-                    <li>Świdnik</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="tytul" lang="en">A story of a certain love</li>
+                    <li id="miasto">Świdnik</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/pasjonaci/1_thumb.jpg" data-full="img/teatr/pasjonaci/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/pasjonaci/2_thumb.jpg" data-full="img/teatr/pasjonaci/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/pasjonaci/3_thumb.jpg" data-full="img/teatr/pasjonaci/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/pasjonaci/1_thumb.jpg" data-full="img/teatr/pasjonaci/1.jpg" class="m-p-g__thumbs-img" alt="Spektakl taneczny" tabindex="5" />
+                    <img src="img/teatr/pasjonaci/2_thumb.jpg" data-full="img/teatr/pasjonaci/2.jpg" class="m-p-g__thumbs-img" alt="Taniec aktorów" tabindex="6" />
+                    <img src="img/teatr/pasjonaci/3_thumb.jpg" data-full="img/teatr/pasjonaci/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2014</p>
+            </div>
 
-    <div class="opis">
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Renata Elmerych - pedagog - terapeuta, instruktor tańca, reżyser (pedagogist - therapist, dance instructor, director)</li>
+                </ul>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2014</p>
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Grupę taneczno-teatralną <b>"Pasjonaci"</b> tworzą tancerze, których łączy wielka pasja i miłość do tańca. Grupa zawiązała się w Środowiskowym Domu Samopomocy w Świdniku w 2014 roku w trakcie prowadzonych tam zajęć terapeutyczno-tanecznych podczas których, w miarę upływu czasu, wyłoniły się prawdziwe talenty, pasjonaci tańca, stąd też nazwa zespołu - "Pasjonaci". Dla nich taniec, ale również teatr, stały się ważnym elementem ich życia, pasją, której oddali się w pełni. Myślą przewodnią działań twórczych grupy jest kochać to, co się robi i cieszyć się tym, bo tylko wtedy jest się autentycznym...
+                </p>
+            </div>
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    The <b>“Passionates”</b> dance and theatre group is made up of dancers who share a great passion and love for dance. The group was founded in the Środowiskowy Dom Samopomocy in Świdnik in 2014 during the therapeutic and dance classes conducted there, during which, over time, real talents, enthusiasts of dance, emerged, hence the name of the group - "Passionates". For them, dance, but also theatre, have become an important part of their lives, a passion to which they devote themselves fully. The guiding principle of the group's creative activities is to love what you are doing and enjoy it, because only then you are authentic ...
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl taneczno-teatralny ukazujący perypetie pary zakochanych w sobie osób i towarzyszące im emocje – miłość, fascynację drugą osobą, zauroczenie, ale też zazdrość, niezrozumienie, kłótnie przeplatane namiętnościami, odchodzeniem od siebie i powrotami... Historia bliska wielu ludziom. Rozgrywa się w latach 20-tych Nowego Jorku, ale dotyczy każdego miejsca na świecie, niezależnie od czasu. Miłość ukazana jest tutaj w różnym przedziale czasu dwójki bohaterów i różnych okolicznościach ich życia...
+                </p>
+            </div>
+
+            <div class="info" tabindex="13" lang="en">
+                <h2>Description of the play</h2>
+                <p>
+                    A dance and theatre performance showing the adventures of a couple in love with each other and the emotions accompanying them - love, fascination with the other person, infatuation, but also jealousy, incomprehension, quarrels interwoven with passions, leaving each other and coming back ... A story close to many people. Set in the 1920s of New York City, it affects anywhere in the world, regardless of time. Love is shown here in different time periods of the two protagonists and different circumstances of their lives ...
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:elmerych.renata@gmail.com" id="link">elmerych.renata@gmail.com</a></p>
+            </div>
+
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Renata Elmerych - pedagog - terapeuta, instruktor tańca, reżyser (pedagogist - therapist, dance instructor, director)</li>
-            </ul>
+    </section>
+    <section>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t_h0-ialMbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe>
         </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Grupę taneczno-teatralną <b>"Pasjonaci"</b> tworzą tancerze, których łączy wielka pasja i miłość do tańca. Grupa zawiązała się w Środowiskowym Domu Samopomocy w Świdniku w 2014 roku w trakcie prowadzonych tam zajęć terapeutyczno-tanecznych podczas których, w miarę upływu czasu, wyłoniły się  prawdziwe talenty, pasjonaci tańca, stąd też nazwa zespołu - "Pasjonaci". Dla nich taniec, ale również teatr, stały się ważnym elementem ich życia, pasją, której oddali się w pełni. Myślą przewodnią działań twórczych grupy jest kochać to, co się robi i cieszyć się tym, bo tylko wtedy jest się autentycznym...
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                The <b>“Passionates”</b> dance and theatre group is made up of dancers who share a great passion and love for dance. The group was founded in the Środowiskowy Dom Samopomocy in Świdnik in 2014 during the therapeutic and dance classes conducted there, during which, over time, real talents, enthusiasts of dance, emerged, hence the name of the group - "Passionates". For them, dance, but also theatre, have become an important part of their lives, a passion to which they devote themselves fully. The guiding principle of the group's creative activities is to love what you are doing and enjoy it, because only then you are authentic ...
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-               Spektakl taneczno-teatralny ukazujący perypetie pary zakochanych w sobie osób i towarzyszące im emocje – miłość, fascynację drugą osobą, zauroczenie, ale też zazdrość, niezrozumienie, kłótnie przeplatane namiętnościami, odchodzeniem od siebie i powrotami... Historia bliska wielu ludziom. Rozgrywa się w latach 20-tych Nowego Jorku, ale dotyczy każdego miejsca na świecie, niezależnie od czasu. Miłość ukazana jest tutaj w różnym przedziale czasu dwójki bohaterów i różnych okolicznościach ich życia...
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                A dance and theatre performance showing the adventures of a couple in love with each other and the emotions accompanying them - love, fascination with the other person, infatuation, but also jealousy, incomprehension, quarrels interwoven with passions, leaving each other and coming back ... A story close to many people. Set in the 1920s of New York City, it affects anywhere in the world, regardless of time. Love is shown here in different time periods of the two protagonists and different circumstances of their lives ...
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:elmerych.renata@gmail.com" id="link">elmerych.renata@gmail.com</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/t_h0-ialMbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

@@ -356,6 +356,7 @@ footer ul li {
 .element p,
 .element h2,
 .element .info ul,
+.element .info ol,
 .element #link {
     color: white;
 }

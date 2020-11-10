@@ -30,117 +30,123 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Свежий ветер/Svezhyi Veter</li>
-                    <li id="tytul">African Story</li>
-                    <li>Stolin</li>
-                    <li><img src="https://www.countryflags.io/by/flat/64.png" alt="Białoruś"></li>
+                    <li id="teatr" lang="ru">Свежий ветер</li>
+                    <li id="teatr" lang="en">Svezhyi Veter</li>
+                    <li id="tytul" lang="en">African Story</li>
+                    <li id="miasto">Stolin</li>
+                    <li><img src="https://www.countryflags.io/by/flat/64.png" alt="Białoruś" title="Białoruś" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/svezhyi-veter/1_thumb.jpg" data-full="img/teatr/svezhyi-veter/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/svezhyi-veter/2_thumb.jpg" data-full="img/teatr/svezhyi-veter/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/svezhyi-veter/3_thumb.jpg" data-full="img/teatr/svezhyi-veter/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/svezhyi-veter/1_thumb.jpg" data-full="img/teatr/svezhyi-veter/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/svezhyi-veter/2_thumb.jpg" data-full="img/teatr/svezhyi-veter/2.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="6" />
+                    <img src="img/teatr/svezhyi-veter/3_thumb.jpg" data-full="img/teatr/svezhyi-veter/3.jpg" class="m-p-g__thumbs-img" alt="Fotografia grupowa" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2008</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2008</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Inna Sholomitskaya - prowadząca (head of the theatre)</li>
+                    <li>Julia Babich - reżyser (director)</li>
+                </ul>
+                <p>Nauczyciele i uczniowie ośrodka poprawczego, uczniowie szkół średnich</p>
+                <p lang="en">Teachers and students of the correctional center, students of secondary schools</p>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Teatr powstał w 2008 roku. Obecnie w teatrze jest 16 aktorów. Szefem teatru jest Inna Sholomitskaya. Reżyser teatralny - Babich Julia. Różnorodność repertuaru umożliwia teatrowi udział w teatralnych i twórczych festiwalach i projektach. Kolektyw "Świeży wiatr” występował na Białorusi, Ukrainie, w Polsce, Niemczech, Litwie, Łotwie, Rosji, Azerbejdżanie.
+                </p>
+            </div>
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    The theater was founded in 2008. Now there are 16 actors in the theater. The head of the theater is Inna Sholomitskaya. Theater director - Babich Julia. The variety of the repertoire enables the theater to participate in theatrical and creative festivals and projects. The "Fresh Wind" team has performed in Belarus, Ukraine, Poland, Germany, Lithuania, Latvia, Russia, Azerbaijan.
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Przed początkiem wszechświata nie było nic oprócz pierwotnego Chaosu. Miał on ze sobą wielkie moce. Z biegiem czasu w kosmosie nastąpił Wielki Wybuch - rozpadł się na drobne cząsteczki i utworzył widzialny i niewidzialny wszechświat. Tak więc życie zaczęło pojawiać się na Ziemi. Pojawili się bogowie, którzy temu towarzyszyli. I tak zaczęły się narodziny kontynentu afrykańskiego...
+                </p>
+            </div>
+
+            <div class="info" tabindex="13" lang="en">
+                <h2>Description of the play</h2>
+                <p>
+                    Before the Beginning, there was nothing but the primordial Chaos. It harbored great powers. Over time, a Big Bang occurred in space - it disintegrated into tiny particles and formed a visible and invisible universe. So life began to emerge on Earth. The Gods appeared who accompanied this. And so the birth of the African continent began...
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:pahodna@yandex.ru" id="link">pahodna@yandex.ru</a></p>
+            </div>
         </div>
+    </section>
+    <section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Inna Sholomitskaya - prowadząca (head of the theatre)</li>
-                <li>Julia Babich - reżyser (director)</li>
-            </ul>
-            <p>Nauczyciele i uczniowie ośrodka poprawczego, uczniowie szkół średnich</p>
-            <p lang="en">Teachers and students of the correctional center, students of secondary schools</p>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Teatr powstał w 2008 roku. Obecnie w teatrze jest 16 aktorów. Szefem teatru jest Inna Sholomitskaya. Reżyser teatralny - Babich Julia. Różnorodność repertuaru umożliwia teatrowi udział w teatralnych i twórczych festiwalach i projektach. Kolektyw "Świeży wiatr” występował na Białorusi, Ukrainie, w Polsce, Niemczech, Litwie, Łotwie, Rosji, Azerbejdżanie.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                The theater was founded in 2008. Now there are 16 actors in the theater. The head of the theater is Inna Sholomitskaya. Theater director - Babich Julia. The variety of the repertoire enables the theater to participate in theatrical and creative festivals and projects. The "Fresh Wind" team has performed in Belarus, Ukraine, Poland, Germany, Lithuania, Latvia, Russia, Azerbaijan.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Przed początkiem wszechświata nie było nic oprócz pierwotnego Chaosu. Miał on ze sobą wielkie moce. Z biegiem czasu w kosmosie nastąpił Wielki Wybuch - rozpadł się na drobne cząsteczki i utworzył widzialny i niewidzialny wszechświat. Tak więc życie zaczęło pojawiać się na Ziemi. Pojawili się bogowie, którzy temu towarzyszyli. I tak zaczęły się narodziny kontynentu afrykańskiego...
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                Before the Beginning, there was nothing but the primordial Chaos. It harbored great powers. Over time, a Big Bang occurred in space - it disintegrated into tiny particles and formed a visible and invisible universe. So life began to emerge on Earth. The Gods appeared who accompanied this. And so the birth of the African continent began...
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:pahodna@yandex.ru" id="link">pahodna@yandex.ru</a></p>
-        </div>
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/GwFxkFYOfoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/GwFxkFYOfoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>
