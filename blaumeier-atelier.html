@@ -30,202 +30,207 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="2">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="3">
                 <ul>
-                    <li><u>Blaumeier-Atelier e.V.</u></li>
-                    <li id="tytul" lang="en" lang="en">Ein Fuß im Saxophon</li>
-                    <li id="tytul" lang="en" lang="en">One foot in the saxophone</li>
-                    <li id="tytul" lang="en" lang="en">Jedna stopa w saksofonie</li>
-                    <li>Brema/Bremen</li>
-                    <li><img src="https://www.countryflags.io/de/flat/64.png" alt="Polska"></li>
+                    <li id="teatr">Blaumeier-Atelier e.V.</li>
+                    <li id="tytul" lang="de">Ein Fuß im Saxophon</li>
+                    <li id="tytul" lang="en">One foot in the saxophone</li>
+                    <li id="tytul">Jedna stopa w saksofonie</li>
+                    <li id="miasto">Brema/Bremen</li>
+                    <li><img src="https://www.countryflags.io/de/flat/64.png" alt="Niemcy" id="flag" title="Niemcy"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/blaumeier/1_thumb.jpg" data-full="img/teatr/blaumeier/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu"/>
-                    <img src="img/teatr/blaumeier/2_thumb.jpg" data-full="img/teatr/blaumeier/2.jpg" class="m-p-g__thumbs-img" alt="Taniec zespołu"/>
-                    <img src="img/teatr/blaumeier/3_thumb.jpg" data-full="img/teatr/blaumeier/3.jpg" class="m-p-g__thumbs-img" alt="Zespół grający muzykę"/>
+                    <img src="img/teatr/blaumeier/1_thumb.jpg" data-full="img/teatr/blaumeier/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex=4 />
+                    <img src="img/teatr/blaumeier/2_thumb.jpg" data-full="img/teatr/blaumeier/2.jpg" class="m-p-g__thumbs-img" alt="Taniec zespołu" tabindex=5 />
+                    <img src="img/teatr/blaumeier/3_thumb.jpg" data-full="img/teatr/blaumeier/3.jpg" class="m-p-g__thumbs-img" alt="Zespół grający muzykę" tabindex="6" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
 
-    <div class="opis">
+        <div class="opis">
 
-        <div class="info">
-            <span>Rok założenia / Established<a></a></span>
-            <p>1986</p>
+            <div class="info" tabindex="7">
+                <h2>Rok założenia / Established<a></a></h2>
+                <p>1986</p>
+            </div>
+
+            <div class="info" tabindex="8">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul style="list-style: none;">
+                    <li><b>Aktorzy / Actors:</b></li>
+                    <li>Dorothe Burhop</li>
+                    <li>Aladdin Detlefsen</li>
+                    <li>Frank Grabski</li>
+                    <li>Bärbel Herold</li>
+                    <li>Maximilian Kurth</li>
+                    <li>Petra Müller</li>
+                    <li>Mateng Pollkläsener</li>
+                    <li>Daniel Riedel</li>
+                    <li>Michael Riesen</li>
+                    <li>Melanie Socher</li>
+                    <li>Denise Stehmeier</li>
+                    <li>Viktoria Tesar</li>
+                    <li>Barbara Weste</li>
+                    <li>Felix Heil</li>
+                    <li>Erik Bernsen</li>
+                    <li>Musicians Les Grooms </li>
+                    <li>Diego Asensio </li>
+                    <li>Christophe Rappoport</li>
+                    <li>Bruno Travert </li>
+                    <li><br></li>
+                    <li><b> Oświetlenie i dźwięk / Light &amp; Sound:</b> Jenni Ramsperger</li>
+                    <li><b>Kositumy i Make-Up / Costumes &amp; Makeup-Artist:</b> Anne Bultmann</li>
+                    <li><b>Stroje / Dressmaking:</b> Bisley Stark</li>
+                    <li><b>Scena / Stage:</b> Werner Kuhrmann</li>
+                    <li><b>Próby muzyczne / Musical rehearals:</b> Klaus Fischer</li>
+                    <li><b>Backstage:</b> Denise Albrecht, Christine Stinner</li>
+                    <li><b>Projekt graficzny / Graphicdesign:</b> Werner Kuhrmann, Andrea Dilzer</li>
+                    <li><b>Fotografia / Photography:</b> Oliver Osmers</li>
+                    <li><b>Koncepcja i reżyseria / Conception and Directors:</b> Imke Burma, Barbara Weste</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="9">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Od momentu powstania Blaumeiera w 1986 roku projekt realizuje ideę stworzenia przestrzeni do zabawy i życia, w której ludzie z różnych środowisk mogą się spotykać i kontaktować.
+                </p>
+                <p>
+                    Główny nacisk kładziony jest na ekspresję artystyczną: dramat, rytm, muzykę, malarstwo, twórcze pisanie, fotografię, budowanie masek i grę z maskami. Nie tylko ludzie zinstytucjonalizowani i oddzieleni od społeczeństwa, ale także tak zwani „normalni” ludzie pracują razem w Blaumeier. W ramach tego projektu znajdują miejsce, w którym mogą się spotkać i odkrywać nowe formy komunikacji i twórczej wymiany pomysłów. Twórczość Blaumeiera cieszy się dużym uznaniem nie tylko w Bremie, ale także w całym kraju.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="10">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Since the creation of Blaumeier in 1986 the project lives the idea to create a space for playing and living where people from all walks of life can meet and get in touch.
+                </p>
+                <p>
+                    The main focus lies on the artistic expression: drama, rhythm, music, painting, creative writing, photography, building masks and acting with masks. Not only people who are institutionalized and separated from society but also so-called "normal" people work together at Blaumeier. Within this project they find a place to come together and to explore new forms of communication and creative exchange. The artistic work of Blaumeier is highly accepted not only in Bremen but also throughout the whole country.
+                </p>
+            </div>
+
+            <div class="info" tabindex="11">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    <b>"Współpraca nie polega na sklejaniu istniejących ego. Chodzi o pomysły, które nigdy nie istniały, dopóki wszyscy nie weszli do pokoju".</b>(Nieznane)
+                </p>
+                <p>
+                    <u>Blue Grooms - podróż przez nieznane krajobrazy</u>
+                </p>
+                <p>
+                    Francuska orkiestra dęta LesGrooms i Blaumeier Theatre Ensemble po raz pierwszy spotkali się w Bremie podczas integracyjnego festiwalu teatralnego "Mittenmang” w czerwcu 2015. Obie grupy grają z wielkim entuzjazmem. Połączenie unikalnego podejścia Blaumeier Theatre do teatru z nieograniczoną muzykalnością LesGrooms wywołało wzajemną ciekawość związaną z tą współpracą.
+                </p>
+                <p>
+                    Zmotywowani do wspólnej pracy, pierwszy tydzień roboczy został zaplanowany na luty 2017 r. W tym tygodniu LesGrooms i Blaumeier Ensemble coraz bardziej twórczo poznawali się nawzajem. Zaczęli komunikować się za pomocą dźwięków, muzyki, ruchów i wszystkich innych znanych i nieznanych języków. Dzięki tej współpracy rzucili sobie wyzwanie, kusili nieznanymi terenami i zaczęli opowiadać historie o głębokim człowieczeństwie.
+                </p>
+                <p>
+                    Podstawową zasadą pracy jest i zawsze była improwizacja.
+                </p>
+                <p>
+                    Żadna scena, żaden utwór muzyczny ani tekst mówiony nie są takie jak poprzednio, ponieważ wszyscy wykonawcy - niezależnie od tego, czy używają instrumentów, czy nie, śpiewają, tańczą, mówią lub działają w ciszy - kultywują sztukę słuchania chwili. W ten sposób w procesie twórczym pojawiają się historie i obrazy przedstawiające wielką szczerość. Każdy muzyk na scenie wnosi swój wkład w sztukę swoją jakością i rytmem.
+                </p>
+                <p>
+                    Podstawa improwizacji, iskra którą wykonawca podpala fajerwerki, przytulny otwarty ogień lub uwodzicielskie błędne ogniki, jest starannie dobierana przez reżyserów. Jednak wkład zawsze dotyczy emocji, napięcia, wielkich ludzkich spraw. Są o kolorach, rytmie i tempie, o miłości, sile lub pożądaniu - krótko mówiąc, o wszystkim, co dotyka nas i naszego człowieczeństwa.
+                </p>
+                <p>
+                    Siła i bezpośredniość chwili, a także umiejętność jej wykorzystania przez muzyków, dają publiczności żywe sceny i obrazy o wielkiej duchowości. Wraz z aktorami na scenie, publiczność jest częścią fascynującego doświadczenia, które jest wyjątkowe i zawsze takie będzie.
+                </p>
+                <p>
+                    Stworzyliśmy kilka prostych zasad naszego grania i zaczynaliśmy każdy wieczór i każdą chwilę ze świeżym umysłem i spojerzeniem.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="12">
+                <h2>Play's description</h2>
+                <p>
+                    <b>"Collaboration is not about gluing together existing egos. It’s about the ideas that never existed until everyone entered the room.“</b> (unknown)
+                </p>
+
+                <p>
+                    <u>Blue Grooms - a journey through unknown landscapes</u>
+                </p>
+                <p>
+                    The french Brass band LesGrooms and the Blaumeier Theatre Ensemble first met in Bremen during the inclusive theatre festival “Mittenmang“ June 2015. Both groups perform with great enthusiasm. The blending of Blaumeier Theatre’s unique approach to theatre making and LesGrooms’ limitless musicality created great curiosity for each other through this collaboration.
+                </p>
+                <p>
+                    Quite motivated to work together, a first working week was arranged in February 2017. During that week, LesGrooms and the Blaumeier Ensemble became creatively acquainted with each other more and more. They started communicating with sounds, music, movements and all other sorts of known and unknown languages. Through this collaboration, they challenged each other, seduced each other to unknown terrains and started telling stories, which were of deep humanity.
+                </p>
+                <p>
+                    The basic principle of the work is and always has been improvisation.
+                </p>
+                <p>
+                    No scene, no piece of music or spoken text is like the one before as all performers - whether they use instruments or not, whether they sing or dance or speak or act in silence - cultivate the art of listening to the moment. By this way of working, stories and images of great truthfulness occur within the creative process. Every player on stage contributes to the scene with his or her very special quality and rhythm.
+                </p>
+                <p>
+                    The basis of the improvisations, let’s say the sparks on which the performers enlight whether fireworks, cosy open fire or seducing will’o’wisps, are thoroughly chosen by the directors. Still the input is always about emotions, about suspense, about great human issues. They are about colours, rhythm and tempi, about love, power or desire - in short, about everything touching us and our humanity.
+                </p>
+                <p>
+                    By the power and the immediacy of the moment and also by the players ability to use it, vivid scenes and images of great spiritedness are presented to the audience. Together with the actors on stage, the audience is part of a fascinating experience, which is unique and always will be so.
+                </p>
+                <p>
+                    We created a few simple rules for the playing and startet every evening and every moment with a fresh open mind.
+                </p>
+
+            </div>
+            <div class="info" tabindex="13">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:info@blaumeier.de" id="link">info@blaumeier.de</a></p>
+            </div>
+
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul style="list-style: none;">
-                <li><b>Aktorzy / Actors:</b></li>
-                <li>Dorothe Burhop</li>
-                <li>Aladdin Detlefsen</li>
-                <li>Frank Grabski</li>
-                <li>Bärbel Herold</li>
-                <li>Maximilian Kurth</li>
-                <li>Petra Müller</li>
-                <li>Mateng Pollkläsener</li>
-                <li>Daniel Riedel</li>
-                <li>Michael Riesen</li>
-                <li>Melanie Socher</li>
-                <li>Denise Stehmeier</li>
-                <li>Viktoria Tesar</li>
-                <li>Barbara Weste</li>
-                <li>Felix Heil</li>
-                <li>Erik Bernsen</li>
-                <li>Musicians Les Grooms </li>
-                <li>Diego Asensio </li>
-                <li>Christophe Rappoport</li>
-                <li>Bruno Travert </li>
-                <li><br></li>
-                <li><b> Oświetlenie i dźwięk / Light &amp; Sound:</b> Jenni Ramsperger</li>
-                <li><b>Kositumy i Make-Up / Costumes &amp; Makeup-Artist:</b> Anne Bultmann</li>
-                <li><b>Stroje / Dressmaking:</b> Bisley Stark</li>
-                <li><b>Scena / Stage:</b> Werner Kuhrmann</li>
-                <li><b>Próby muzyczne / Musical rehearals:</b> Klaus Fischer</li>
-                <li><b>Backstage:</b> Denise Albrecht, Christine Stinner</li>
-                <li><b>Projekt graficzny / Graphicdesign:</b> Werner Kuhrmann, Andrea Dilzer</li>
-                <li><b>Fotografia / Photography:</b> Oliver Osmers</li>
-                <li><b>Koncepcja i reżyseria / Conception and Directors:</b> Imke Burma, Barbara Weste</li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Od momentu powstania Blaumeiera w 1986 roku projekt realizuje ideę stworzenia przestrzeni do zabawy i życia, w której ludzie z różnych środowisk mogą się spotykać i kontaktować.
-            </p>
-            <p>
-                Główny nacisk kładziony jest na ekspresję artystyczną: dramat, rytm, muzykę, malarstwo, twórcze pisanie, fotografię, budowanie masek i grę z maskami. Nie tylko ludzie zinstytucjonalizowani i oddzieleni od społeczeństwa, ale także tak zwani „normalni” ludzie pracują razem w Blaumeier. W ramach tego projektu znajdują miejsce, w którym mogą się spotkać i odkrywać nowe formy komunikacji i twórczej wymiany pomysłów. Twórczość Blaumeiera cieszy się dużym uznaniem nie tylko w Bremie, ale także w całym kraju.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Since the creation of Blaumeier in 1986 the project lives the idea to create a space for playing and living where people from all walks of life can meet and get in touch.
-            </p>
-            <p>
-                The main focus lies on the artistic expression: drama, rhythm, music, painting, creative writing, photography, building masks and acting with masks. Not only people who are institutionalized and separated from society but also so-called "normal" people work together at Blaumeier. Within this project they find a place to come together and to explore new forms of communication and creative exchange. The artistic work of Blaumeier is highly accepted not only in Bremen but also throughout the whole country.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                <b>"Współpraca nie polega na sklejaniu istniejących ego. Chodzi o pomysły, które nigdy nie istniały, dopóki wszyscy nie weszli do pokoju".</b>(Nieznane)
-            </p>
-            <p>
-                <u>Blue Grooms - podróż przez nieznane krajobrazy</u>
-            </p>
-            <p>
-                Francuska orkiestra dęta LesGrooms i Blaumeier Theatre Ensemble po raz pierwszy spotkali się w Bremie podczas integracyjnego festiwalu teatralnego "Mittenmang” w czerwcu 2015. Obie grupy grają z wielkim entuzjazmem. Połączenie unikalnego podejścia Blaumeier Theatre do teatru z nieograniczoną muzykalnością LesGrooms wywołało wzajemną ciekawość związaną z tą współpracą.
-            </p>
-            <p>
-                Zmotywowani do wspólnej pracy, pierwszy tydzień roboczy został zaplanowany na luty 2017 r. W tym tygodniu LesGrooms i Blaumeier Ensemble coraz bardziej twórczo poznawali się nawzajem. Zaczęli komunikować się za pomocą dźwięków, muzyki, ruchów i wszystkich innych znanych i nieznanych języków. Dzięki tej współpracy rzucili sobie wyzwanie, kusili nieznanymi terenami i zaczęli opowiadać historie o głębokim człowieczeństwie.
-            </p>
-            <p>
-                Podstawową zasadą pracy jest i zawsze była improwizacja.
-            </p>
-            <p>
-                Żadna scena, żaden utwór muzyczny ani tekst mówiony nie są takie jak poprzednio, ponieważ wszyscy wykonawcy - niezależnie od tego, czy używają instrumentów, czy nie, śpiewają, tańczą, mówią lub działają w ciszy - kultywują sztukę słuchania chwili. W ten sposób w procesie twórczym pojawiają się historie i obrazy przedstawiające wielką szczerość. Każdy muzyk na scenie wnosi swój wkład w sztukę swoją jakością i rytmem.
-            </p>
-            <p>
-                Podstawa improwizacji, iskra którą wykonawca podpala fajerwerki, przytulny otwarty ogień lub uwodzicielskie błędne ogniki, jest starannie dobierana przez reżyserów. Jednak wkład zawsze dotyczy emocji, napięcia, wielkich ludzkich spraw. Są o kolorach, rytmie i tempie, o miłości, sile lub pożądaniu - krótko mówiąc, o wszystkim, co dotyka nas i naszego człowieczeństwa.
-            </p>
-            <p>
-                Siła i bezpośredniość chwili, a także umiejętność jej wykorzystania przez muzyków, dają publiczności żywe sceny i obrazy o wielkiej duchowości. Wraz z aktorami na scenie, publiczność jest częścią fascynującego doświadczenia, które jest wyjątkowe i zawsze takie będzie.
-            </p>
-            <p>
-                Stworzyliśmy kilka prostych zasad naszego grania i zaczynaliśmy każdy wieczór i każdą chwilę ze świeżym umysłem i spojerzeniem.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-           <span>Play's description</span>
-            <p>
-                <b>"Collaboration is not about gluing together existing egos. It’s about the ideas that never existed until everyone entered the room.“</b> (unknown)
-            </p>
-
-            <p>
-                <u>Blue Grooms - a journey through unknown landscapes</u>
-            </p>
-            <p>
-                The french Brass band LesGrooms and the Blaumeier Theatre Ensemble first met in Bremen during the inclusive theatre festival “Mittenmang“ June 2015. Both groups perform with great enthusiasm. The blending of Blaumeier Theatre’s unique approach to theatre making and LesGrooms’ limitless musicality created great curiosity for each other through this collaboration.
-            </p>
-            <p>
-                Quite motivated to work together, a first working week was arranged in February 2017. During that week, LesGrooms and the Blaumeier Ensemble became creatively acquainted with each other more and more. They started communicating with sounds, music, movements and all other sorts of known and unknown languages. Through this collaboration, they challenged each other, seduced each other to unknown terrains and started telling stories, which were of deep humanity.
-            </p>
-            <p>
-                The basic principle of the work is and always has been improvisation.
-            </p>
-            <p>
-                No scene, no piece of music or spoken text is like the one before as all performers - whether they use instruments or not, whether they sing or dance or speak or act in silence - cultivate the art of listening to the moment. By this way of working, stories and images of great truthfulness occur within the creative process. Every player on stage contributes to the scene with his or her very special quality and rhythm.
-            </p>
-            <p>
-                The basis of the improvisations, let’s say the sparks on which the performers enlight whether fireworks, cosy open fire or seducing will’o’wisps, are thoroughly chosen by the directors. Still the input is always about emotions, about suspense, about great human issues. They are about colours, rhythm and tempi, about love, power or desire - in short, about everything touching us and our humanity.
-            </p>
-            <p>
-                By the power and the immediacy of the moment and also by the players ability to use it, vivid scenes and images of great spiritedness are presented to the audience. Together with the actors on stage, the audience is part of a fascinating experience, which is unique and always will be so.
-            </p>
-            <p>
-                We created a few simple rules for the playing and startet every evening and every moment with a fresh open mind.
-            </p>
-
-        </div>
-        <div class="info">
-            <span >Kontakt / Contact</span>
-            <p><a href="mailto:info@blaumeier.de" id="link">info@blaumeier.de</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/gF0R6CAcQQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/gF0R6CAcQQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="14"></iframe></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="15"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="16"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="17"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="18"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="19"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="20"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="21"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="22"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="23"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
 
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/material-photo-gallery.js"></script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

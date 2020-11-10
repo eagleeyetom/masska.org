@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Amatorzy - Masska On-Line</title>
+    <title>Film "Amatorzy" - Masska On-Line</title>
 
     <meta name="author" content="Paulina Lewandowska">
 
@@ -30,41 +30,46 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" class="banner" alt="Masska - Przegląd Teatralny"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Film Amatorzy</li>
+                    <li id="teatr">Film Amatorzy</li>
                     <li id="tytul">Wywiad z Iwoną Siekierzyńską</li>
                 </ul>
             </div>
 
             <div class="m-p-g">
-                <!--div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/walny/1_thumb.jpg" data-full="img/teatr/walny/1.jpg" class="m-p-g__thumbs-img" />
-                    <!--img src="img/teatr/lo-men/2_thumb.jpg" data-full="img/teatr/lo-men/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/lo-men/3_thumb.jpg" data-full="img/teatr/lo-men/3.jpg" class="m-p-g__thumbs-img" />
-
-                </div-->
+                <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                    <img src="img/teatr/amatorzy/1_thumb.jpg" data-full="img/teatr/amatorzy/1.jpg" class="m-p-g__thumbs-img" alt="Aktorzy stojący przy napisie 'Festiwal Teatrów Niepełnosprawnych'" tabindex="5"/>
+                    <img src="img/teatr/amatorzy/2_thumb.jpg" data-full="img/teatr/amatorzy/2.jpg" class="m-p-g__thumbs-img" alt="Aktorzy stojący przy samochodzie" tabindex="6"/>
+                    <img src="img/teatr/amatorzy/3_thumb.jpg" data-full="img/teatr/amatorzy/3.jpg" class="m-p-g__thumbs-img" alt="Krzysztof Kowalewski przy stole" tabindex="7"/>
+                </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
-
-    <div class="opis">
-
-        <div class="info">
+    </section>
+    <section class="opis" id="textDiv">
+        <div class="info" tabindex="8">
             <p>
                 Historia przedstawiona w filmie pt: "Amatorzy" w reżyserii Iwony Siekierzyńskiej nawiązuje do działalności gdyńskiego Teatru Biuro Rzeczy Osobistych, istniejącego od 1998 roku przy PSONI Koło w Gdyni. Członkami założonego przez Zbigniew Biegajło zespołu są osoby z niepełnosprawnością intelektualną.
             </p>
@@ -89,9 +94,9 @@
                 <i>źródło Teatr BRO</i>
             </p>
         </div>
-        <div class="info" lang="en">
+        <div class="info" lang="en" tabindex="9">
             <p>
-                <p>
+            <p>
                 The story presented in the film "Amateurs", directed by Iwona Siekierzyńska, refers to the activity of the Biuro Rzeczy Osobistych Theater in Gdynia, existing since 1998 at PSONI Circle in Gdynia. The members of the team founded by Zbigniew Biegajło are people with intellectual disabilities.
             </p>
             <p>
@@ -115,37 +120,32 @@
                 <i> source Teatr BRO </i>
             </p>
         </div>
-    </div>
+    </section>
+    <section class="yt" tabindex="10">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3IjuXVHC1VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-
-        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/3IjuXVHC1VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
+    <section>
         <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="11"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="12"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="13"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="14"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="15"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="16"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="17"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="18"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="19"></div>
+            </div>
+        </footer>
+    </section>
 
-        <script src="js/material-photo-gallery.js"></script>
+    <script src="js/material-photo-gallery.js"></script>
+    <script src="js/all-scripts.js"></script>
 
-        <script>
-            var elem = document.querySelector('.m-p-g');
-
-            document.addEventListener('DOMContentLoaded', function() {
-                var gallery = new MaterialPhotoGallery(elem);
-            });
-
-        </script>
 </body>
 
 </html>

@@ -30,130 +30,136 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Compañía Danza Mobile</li>
-                    <li>Sewilla/Sevilla</li>
-                    <li><img src="https://www.countryflags.io/es/flat/64.png" alt="Polska"></li>
+                    <li id="teatr">Compañía Danza Mobile</li>
+                    <li id="miasto">Sewilla/Sevilla</li>
+                    <li><img src="https://www.countryflags.io/es/flat/64.png" alt="Hiszpania" title="Hiszpania" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/danza-mobile/1_thumb.jpg" data-full="img/teatr/danza-mobile/1.jpg" class="m-p-g__thumbs-img" alt="Fragment przedstawienia" />
-                    <img src="img/teatr/danza-mobile/2_thumb.jpg" data-full="img/teatr/danza-mobile/2.jpg" class="m-p-g__thumbs-img" alt="Zespół tańczący przy drewnianej ramce"/>
-                    <img src="img/teatr/danza-mobile/3_thumb.jpg" data-full="img/teatr/danza-mobile/3.jpg" class="m-p-g__thumbs-img" alt="Fotografia zespołu"/>
+                    <img src="img/teatr/danza-mobile/1_thumb.jpg" data-full="img/teatr/danza-mobile/1.jpg" class="m-p-g__thumbs-img" alt="Fragment przedstawienia" tabindex="5" />
+                    <img src="img/teatr/danza-mobile/2_thumb.jpg" data-full="img/teatr/danza-mobile/2.jpg" class="m-p-g__thumbs-img" alt="Zespół tańczący przy drewnianej ramce" tabindex="6" />
+                    <img src="img/teatr/danza-mobile/3_thumb.jpg" data-full="img/teatr/danza-mobile/3.jpg" class="m-p-g__thumbs-img pion" alt="Fotografia zespołu" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2016</p>
+            </div>
 
-        <div class="info">
-            <span>Rok założenia / Established</span>
-            <p>2016</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Esmeralda Valderrama</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Compañía Danza Mobile rozpoczęła swoją karierę zawodową w 2001 roku, będąc punktem odniesienia w dziedzinie integracyjnego krajowego i międzynarodowego tańca współczesnego. Od pierwszej inscenizacji odbyło się 25 przedstawień, z którymi wykonano ponad 600 występów. Za tę pracę otrzymał wiele nagród, w tym MAX Social od Generalnego Towarzystwa Autorów Hiszpanii.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="11">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Compañía Danza Mobile began its professional career in 2001 being a benchmark in the field of inclusive national and international contemporary dance. Since the first staging, there have been 25 shows and over 600 performances have been made. For this work, they have received various awards including the MAX Social of the General Society of Authors of Spain.
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Ideą projektu jest zamieszkanie w przestrzeniach, które powstają w wyniku pracy rzeźbiarskiej. W tej pracy nie interesuje nas sam przedmiot, ale luki w nim. Sugestia tkwi właśnie w tym, czego nie widzimy w rzeźbie. I to z tych pustych przestrzeni pochodzi cały proponowany przez nas język.
+                </p>
+                <p>
+                    Otwór to wolny otwór, przez który można przejść w inne miejsce lub z którego można obserwować, co znajduje się po drugiej stronie ściany. Daremna może być więc obietnica, pytanie, decyzja lub portret. Otworzyć można drzwi wewnętrzne lub zewnętrzne. A próżność jest także nieskuteczna, bezużyteczna, niedziałająca, bezowocna.
+                </p>
+                <p>
+                    Ile drobnych myśli, przeżyć lub wizji naładowanych siłą i pięknem pozostaje w intymności osoby, pozostając niezauważonymi przez większość.
+                </p>
+                <p>
+                    To tam zaczyna się nasza podróż, w tej pustej przestrzeni, w tej małej chwili bez znaczenia dla świata, na próżno, na próżno...
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="13">
+                <h2>Description of the play</h2>
+                <p>
+                    The idea that has moved this project from the beginning is to inhabit the spaces that arise from a sculptural work. In this work, the object itself is not what interests us, but the gaps in it. The suggestion lies precisely in what we do not see of the sculpture. And it is from those empty spaces where all the language that we propose comes from.
+                </p>
+                <p>
+                    An opening is a free hole through which to cross to another place, or from which to observe what is on the other side of the wall. A vain can therefore be a promise, a question, a decision or a portrait. An opening can be an inward or outward door. And vain is also the ineffective, the useless, the inoperative, the fruitless.
+                </p>
+                <p>
+                    How many small thoughts, experiences or visions charged with strength and beauty remain in the intimacy of a person, remaining unnoticed by the majority.
+                    It is there where our journey begins, in that empty space, in that small moment inconsequential to the world, in vain, in vain.
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:distribucion@danzamobile.es" id="link">distribucion@danzamobile.es</a></p>
+            </div>
+
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Esmeralda Valderrama</li>
-            </ul>
+    </section>
+    <section>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0hxm2LQMaNw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe>
         </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Compañía Danza Mobile rozpoczęła swoją karierę zawodową w 2001 roku, będąc punktem odniesienia w dziedzinie integracyjnego krajowego i międzynarodowego tańca współczesnego. Od pierwszej inscenizacji odbyło się 25 przedstawień, z którymi wykonano ponad 600 występów. Za tę pracę otrzymał wiele nagród, w tym MAX Social od Generalnego Towarzystwa Autorów Hiszpanii.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Compañía Danza Mobile began its professional career in 2001 being a benchmark in the field of inclusive national and international contemporary dance. Since the first staging, there have been 25 shows and over 600 performances have been made. For this work, they have received various awards including the MAX Social of the General Society of Authors of Spain.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Ideą projektu jest zamieszkanie w przestrzeniach, które powstają w wyniku pracy rzeźbiarskiej. W tej pracy nie interesuje nas sam przedmiot, ale luki w nim. Sugestia tkwi właśnie w tym, czego nie widzimy w rzeźbie. I to z tych pustych przestrzeni pochodzi cały proponowany przez nas język.
-            </p>
-            <p>
-                Otwór to wolny otwór, przez który można przejść w inne miejsce lub z którego można obserwować, co znajduje się po drugiej stronie ściany. Daremna może być więc obietnica, pytanie, decyzja lub portret. Otworzyć można drzwi wewnętrzne lub zewnętrzne. A próżność jest także nieskuteczna, bezużyteczna, niedziałająca, bezowocna.
-            </p>
-            <p>
-                Ile drobnych myśli, przeżyć lub wizji naładowanych siłą i pięknem pozostaje w intymności osoby, pozostając niezauważonymi przez większość.
-            </p>
-            <p>
-                To tam zaczyna się nasza podróż, w tej pustej przestrzeni, w tej małej chwili bez znaczenia dla świata, na próżno, na próżno...
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                The idea that has moved this project from the beginning is to inhabit the spaces that arise from a sculptural work. In this work, the object itself is not what interests us, but the gaps in it. The suggestion lies precisely in what we do not see of the sculpture. And it is from those empty spaces where all the language that we propose comes from.
-            </p>
-            <p>
-                An opening is a free hole through which to cross to another place, or from which to observe what is on the other side of the wall. A vain can therefore be a promise, a question, a decision or a portrait. An opening can be an inward or outward door. And vain is also the ineffective, the useless, the inoperative, the fruitless.
-            </p>
-            <p>
-                How many small thoughts, experiences or visions charged with strength and beauty remain in the intimacy of a person, remaining unnoticed by the majority.
-                It is there where our journey begins, in that empty space, in that small moment inconsequential to the world, in vain, in vain.
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:distribucion@danzamobile.es" id="link">distribucion@danzamobile.es</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/0hxm2LQMaNw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

@@ -30,136 +30,142 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Biuro Rzeczy Osobistych</li>
-                    <li id="tytul">Moja sprawa / My case</li>
-                    <li>Gdynia</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="teatr">Biuro Rzeczy Osobistych</li>
+                    <li id="tytul">Moja sprawa</li>
+                    <li id="tytul">My case</li>
+                    <li id="miasto">Gdynia</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/bro/1_thumb.jpg" data-full="img/teatr/bro/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu"/>
-                    <img src="img/teatr/bro/2_thumb.jpg" data-full="img/teatr/bro/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu"/>
-                    <img src="img/teatr/bro/3_thumb.jpg" data-full="img/teatr/bro/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie Biura Rzeczy Osobistych"/>
+                    <img src="img/teatr/bro/1_thumb.jpg" data-full="img/teatr/bro/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/bro/2_thumb.jpg" data-full="img/teatr/bro/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/bro/3_thumb.jpg" data-full="img/teatr/bro/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie Biura Rzeczy Osobistych" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
+
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>1998</p>
+            </div>
+
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Zbigniew Biegajło - kierownik zespołu (group's manager)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Biuro Rzeczy Osobistych to grupa teatralna, w której aktorami są osoby z niepełnosprawnościami. Działania zespołu zmierzają do usamodzielnienia i zaistnienia jako grupa teatralna, której cele wykraczają poza terapeutyczny charakter. Chcemy realizować spektakle pozwalające na odbiór i ocenę w kategorii sztuki.
+                </p>
+                <p>
+                    Do Konkursu Głównego tegorocznego Festiwalu Polskich Filmów Fabularnych w Gdyni zakwalifikowany został film w reż. Iwony Siekierzyńskiej pod tytułem "Amatorzy" z udziałem aktorów BRO.
+
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="11">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Biuro Rzeczy Osobistych (Personal Things Bureau) is a theatre group in which actors are people with disabilities. The group's activities are aimed at becoming independent and emerging as a theatre group whose goals reach out beyond the therapeutic character. We want to make performances that allow for reception and evaluation in the category of art.
+                </p>
+                <p>
+                    A film directed by Iwona Siekierzyńska entitled "Amateurs" with the participation of BRO's actors has qualified for the Main Competition of this year's Polish Feature Film Festival in Gdynia.
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Przedstawienie pt: Moja sprawa jest eksperymentem artystycznym angażującym niepełnosprawnych intelektualnie aktorów gdyńskiego Teatru Biuro Rzeczy Osobistych (BRO) i profesjonalnych twórców teatru. Dramat jest konstrukcją teatru w teatrze, a zespół BRO pracujący nad sztuką centralną osią dramaturgii. W trakcie pracy nad spektaklem jedna z bohaterek dramatu, którą kreuje niepełnosprawna aktorka zachodzi w ciążę. Jest to opowieść o jej losie i skomplikowanej sytuacji rodzinnej.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="13">
+                <h2>Description of the play</h2>
+                <p>
+                    "My Case" is an artistic experiment involving intellectually disabled actors from Gdynia's Biuro Rzeczy Osobistych (BRO) Theatre and professional theatre creators. Drama is a construction of the theatre within the theatre, and the BRO group working on art is the central axis of drama. While working on the performance, one of the protagonists of the drama, created by a disabled actress, becomes pregnant. It is a story about her fate and a complicated family situation.
+                </p>
+                <ul style="list-style: none">
+                    <li><b>Reżyseria (directed by):</b> Iwona Siekierzyńska</li>
+                    <li><b>Scenariusz (script):</b> Radosław Paczocha</li>
+                    <li><b>Kostiumy, scenografia (costumes, scenography):</b> Izabela Stronias</li>
+                    <li><b>Muzyka (music):</b> Marzena Majcher</li>
+                    <li><br></li>
+                    <li><b>Obsada (actors):</b></li>
+                    <li><b>gościnnie (guests):</b></li>
+                    <li>Aleksandra Nieśpielak, Krzysztof Grabowski</li>
+                    <li><b>aktorzy BRO (BRO actors):</b></li>
+                    <li>Marzena Gajewska, Renata Klinkosz, Adam Siekierzyński, Tomasz Macniak, Marcin Wenta, Oliwia Cubala</li>
+
+                </ul>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:teatrbro@op.pl" id="link">teatrbro@op.pl</a></p>
+            </div>
+
+        </div>
+    </section>
+    <section>
+    <div class="yt">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GzB0YY4ecvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe>
     </div>
-
-    <div class="opis">
-
-        <div class="info">
-            <span>Rok założenia / Established</span>
-            <p>1998</p>
-        </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Zbigniew Biegajło - kierownik zespołu (group's manager)</li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Biuro Rzeczy Osobistych to grupa teatralna, w której aktorami są osoby z niepełnosprawnościami. Działania zespołu zmierzają do usamodzielnienia i zaistnienia jako grupa teatralna, której cele wykraczają poza terapeutyczny charakter. Chcemy realizować spektakle pozwalające na odbiór i ocenę w kategorii sztuki.
-            </p>
-            <p>
-                Do Konkursu Głównego tegorocznego Festiwalu Polskich Filmów Fabularnych w Gdyni zakwalifikowany został film w reż. Iwony Siekierzyńskiej pod tytułem "Amatorzy" z udziałem aktorów BRO.
-
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Biuro Rzeczy Osobistych (Personal Things Bureau) is a theatre group in which actors are people with disabilities. The group's activities are aimed at becoming independent and emerging as a theatre group whose goals reach out beyond the therapeutic character. We want to make performances that allow for reception and evaluation in the category of art.
-            </p>
-            <p>
-                A film directed by Iwona Siekierzyńska entitled "Amateurs" with the participation of BRO's actors has qualified for the Main Competition of this year's Polish Feature Film Festival in Gdynia.
-            </p>
-
-            <p><a href="http://www.festiwalgdynia.pl/program/filmy/-1--2958-_amatorzy.html" id="link">LINK</a></p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Przedstawienie pt: Moja sprawa jest eksperymentem artystycznym angażującym niepełnosprawnych intelektualnie aktorów gdyńskiego Teatru Biuro Rzeczy Osobistych (BRO) i profesjonalnych twórców teatru. Dramat jest konstrukcją teatru w teatrze, a zespół BRO pracujący nad sztuką centralną osią dramaturgii. W trakcie pracy nad spektaklem jedna z bohaterek dramatu, którą kreuje niepełnosprawna aktorka zachodzi w ciążę. Jest to opowieść o jej losie i skomplikowanej sytuacji rodzinnej.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-               "My Case" is an artistic experiment involving intellectually disabled actors from Gdynia's Biuro Rzeczy Osobistych (BRO) Theatre and professional theatre creators. Drama is a construction of the theatre within the theatre, and the BRO group working on art is the central axis of drama. While working on the performance, one of the protagonists of the drama, created by a disabled actress, becomes pregnant. It is a story about her fate and a complicated family situation.
-            </p>
-            <ul style="list-style: none">
-                <li><b>Reżyseria (directed by):</b> Iwona Siekierzyńska</li>
-                <li><b>Scenariusz (script):</b> Radosław Paczocha</li>
-                <li><b>Kostiumy, scenografia (costumes, scenography):</b> Izabela Stronias</li>
-                <li><b>Muzyka (music):</b> Marzena Majcher</li>
-                <li><br></li>
-                <li><b>Obsada (actors):</b></li>
-                <li><b>gościnnie (guests):</b></li>
-                <li>Aleksandra Nieśpielak, Krzysztof Grabowski</li>
-                <li><b>aktorzy BRO (BRO actors):</b></li>
-                <li>Marzena Gajewska, Renata Klinkosz, Adam Siekierzyński, Tomasz Macniak, Marcin Wenta, Oliwia Cubala</li>
-
-            </ul>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:teatrbro@op.pl" id="link">teatrbro@op.pl</a></p>
-        </div>
-
-    </div>
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/GzB0YY4ecvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+</section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

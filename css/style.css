@@ -326,6 +326,7 @@ footer ul li {
     #mtt {
         font-size: 20px !important
     }
+
 }
 
 #link {
@@ -333,10 +334,14 @@ footer ul li {
     font-size: 1.5em
 }
 
-.pion {
-    height: 100% !important;
-    max-height: 100% !important;
-    width: 100% !important
+
+
+@media only screen and (min-width:700px) {
+    .pion {
+        height: 40% !important;
+        max-height: 40% !important;
+        width: 40% !important
+    }
 }
 
 .element {
@@ -344,13 +349,23 @@ footer ul li {
     transition-duration: .4s;
 }
 
-.element p {
+.element p,
+.element h2,
+.element .info ul,
+.element #link {
     color: white;
 }
 
-.element img,
+.element .footer,
+.element .image,
+.element .banner,
+.element .head,
 .element .button button,
-.element .centered,
+.element .nazwa #teatr,
+.element .nazwa #tytul,
+.element .nazwa #miasto,
+.element .button button,
+.element #kontrast,
 .element .sekcja {
     filter: invert(100%);
     transition-duration: .4s;
@@ -366,14 +381,23 @@ footer ul li {
     background-color: #cbbbab !important;
 }
 
-.element.toggle p {
+.element.toggle p,
+.element.toggle h2,
+.element.toggle .info ul,
+.element.toggle #link {
     color: black;
 }
 
-.element.toggle img,
+.element.toggle .banner,
+.element.toggle .footer,
+.element.toggle .image,
+.element.toggle .head,
 .element.toggle .button button,
-.element.toggle .centered,
-.element.toggle .sekcja{
+.element.toggle .nazwa #teatr,
+.element.toggle .nazwa #tytul,
+.element.toggle .nazwa #miasto,
+.element.toggle #kontrast,
+.element.toggle .sekcja {
     filter: invert(0%)
 }
 

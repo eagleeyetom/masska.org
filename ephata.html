@@ -30,136 +30,142 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Teatr Ephata</li>
-                    <li id="tytul">Apokalipsa. U wrót doliny. / Apocalypse. At the entrance to the valley.</li>
-                    <li>Gdańsk</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="teatr">Teatr Ephata</li>
+                    <li id="tytul">Apokalipsa. U wrót doliny.</li>
+                    <li id="tytul" lang="en">Apocalypse. At the entrance to the valley.</li>
+                    <li id="miasto">Gdańsk</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" title="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/ephata/1_thumb.jpg" data-full="img/teatr/ephata/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/ephata/2_thumb.jpg" data-full="img/teatr/ephata/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/ephata/3_thumb.jpg" data-full="img/teatr/ephata/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/ephata/1_thumb.jpg" data-full="img/teatr/ephata/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/ephata/3_thumb.jpg" data-full="img/teatr/ephata/3.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/ephata/2_thumb.jpg" data-full="img/teatr/ephata/2.jpg" class="m-p-g__thumbs-img pion" alt="Czarny anioł klęczący przed białym aniołem" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="opis">
+    <section id="textDiv">
+        <div class="opis">
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>1997</p>
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>1997</p>
+            </div>
+
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Reżyser (director): Robert Cyrta
+                    <li>Aktorzy: 25 osób / 25 actors</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Teatr „Ephata” powstał w 1997 roku w Iławie, a 13 lat temu przeniósł się do Gdańska i znalazł scenę najpierw w Pałacu Młodzieży, a potem w XX Liceum ogólnokształcącym w Gdańsku, gdzie co prawda ze zmienioną obsadą tworzy opartą na słowie, ruchu, symbolice i plastyce ciała widowiska teatralne. Obecnie Teatr "EPHATA” jest niezależną grupą teatralną, który skupia młodzież z Gdańska w wieku od 17 do 26 lat.
+                </p>
+                <p>
+                    „Ephata” z języka greckiego znaczy „otwórz się”, i taki jest teatr: otwarty i poszukujący tego co dobre i piękne.
+                </p>
+                <p>
+                    Założyciel, instruktor teatralny i reżyser: Robert Cyrta
+
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="11">
+                <h2>Description of the theatre</h2>
+                <p>
+                    The "Ephata" Theatre were founded in 1997 in Iława, and 13 years ago they moved to Gdańsk and found a stage first in the Youth Palace, and then in the 20th General Secondary School in Gdańsk, where, with a changed cast, they create theatrical performances based on words, movement, symbolism and body art. Currently, the "EPHATA" Theater is an independent theater group that brings together young people from Gdańsk aged 17 to 26.
+                </p>
+                <p>
+                    "Ephata" from Greek means "open up", and this is the theatre: open and seeking what is good and beautiful.
+                </p>
+                <p>
+                    Founder, theater instructor and director: Robert Cyrta
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl symboliczny i plastyczny oparty na tekstach Apokalipsy św. Jana, wierszu Zbigniewa Herberta "U wrót doliny" i obrazie Hansa Memlinga „Sąd ostateczny”. Jest to opowieść o trudnych wyborach, zazdrości i tęsknocie, a wszystko z perspektywy upadłego anioła, który świadomy swojej całkowitej decyzji podąża ścieżką ciemności i…
+                </p>
+                <p>
+                    Scenariusz - Robert Cyrta i Zespół uzupełnione tekstem Pisma Świętego i twórczości Zbigniewa Herberta
+                </p>
+
+            </div>
+
+            <div class="info" lang="en" tabindex="13">
+                <h2>Description of the play</h2>
+                <p>
+                    A symbolic and visual performance based on the texts of the Apocalypse of St. John, Zbigniew Herbert's poem "At the gate of the valley" and Hans Memling's painting "The Last Judgment". It is a story about difficult choices, jealousy and longing, all from the perspective of a fallen angel who, aware of his total decision, follows the path of darkness and...
+                </p>
+                <p>
+                    Screenplay by Robert Cyrta and the team supplemented with the text of the Holy Bible and Zbigniew Herbert's works
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Reżyser (director): Robert Cyrta
-                <li>Aktorzy: 25 osób / 25 actors</li>
-            </ul>
-        </div>
+    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/uE_mx-AvRuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
 
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Teatr „Ephata” powstał w 1997 roku w Iławie, a 13 lat temu przeniósł się do Gdańska i znalazł scenę najpierw w Pałacu Młodzieży, a potem w XX Liceum ogólnokształcącym w Gdańsku, gdzie co prawda ze zmienioną obsadą tworzy opartą na słowie, ruchu, symbolice i plastyce ciała widowiska teatralne. Obecnie Teatr "EPHATA” jest niezależną grupą teatralną, który skupia młodzież z Gdańska w wieku od 17 do 26 lat.
-            </p>
-            <p>
-                „Ephata” z języka greckiego znaczy „otwórz się”, i taki jest teatr: otwarty i poszukujący tego co dobre i piękne.
-            </p>
-            <p>
-                Założyciel, instruktor teatralny i reżyser: Robert Cyrta
-
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-               The "Ephata" Theatre were founded in 1997 in Iława, and 13 years ago they moved to Gdańsk and found a stage first in the Youth Palace, and then in the 20th General Secondary School in Gdańsk, where, with a changed cast, they create theatrical performances based on words, movement, symbolism and body art. Currently, the "EPHATA" Theater is an independent theater group that brings together young people from Gdańsk aged 17 to 26.
-            </p>
-            <p>
-                "Ephata" from Greek means "open up", and this is the theatre: open and seeking what is good and beautiful.
-            </p>
-            <p>
-                Founder, theater instructor and director: Robert Cyrta
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Spektakl symboliczny i plastyczny oparty na tekstach Apokalipsy św. Jana, wierszu Zbigniewa Herberta "U wrót doliny" i obrazie Hansa Memlinga „Sąd ostateczny”. Jest to opowieść o trudnych wyborach, zazdrości i tęsknocie, a wszystko z perspektywy upadłego anioła, który świadomy swojej całkowitej decyzji podąża ścieżką ciemności i…
-            </p>
-            <p>
-                Scenariusz - Robert Cyrta i Zespół uzupełnione tekstem Pisma Świętego i twórczości Zbigniewa Herberta
-            </p>
-
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-               A symbolic and visual performance based on the texts of the Apocalypse of St. John, Zbigniew Herbert's poem "At the gate of the valley" and Hans Memling's painting "The Last Judgment". It is a story about difficult choices, jealousy and longing, all from the perspective of a fallen angel who, aware of his total decision, follows the path of darkness and...
-            </p>
-            <p>
-            Screenplay by Robert Cyrta and the team supplemented with the text of the Holy Bible and Zbigniew Herbert's works
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/uE_mx-AvRuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

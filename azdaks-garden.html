@@ -30,128 +30,131 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner" tabindex="0"></a>
+<body id="resultDiv" class="element toggle">
 
-    </header>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    <div>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
+
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa" tabindex="1">
+            <div class="nazwa">
                 <ul>
-                    <li lang="en">Integrated Theatre "Azdak’s Garden"</li>
+                    <li lang="en" id="teatr">Integrated Theatre "Azdak’s Garden"</li>
                     <li id="tytul" lang="en">Three penny opera</li>
                     <li id="tytul">Opera za trzy grosze</li>
-                    <li>Tbilisi</li>
-                    <li><img src="https://www.countryflags.io/ge/flat/64.png" alt="Gruzja"></li>
+                    <li id="miasto">Tbilisi</li>
+                    <li><img src="https://www.countryflags.io/ge/flat/64.png" alt="Gruzja" id="flag" title="Gruzja"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/azdaks-garden/1_thumb.jpg" data-full="img/teatr/azdaks-garden/1.jpg" class="m-p-g__thumbs-img" alt="Grupa teatralna Azdak's Garden" tabindex="2"/>
-                    <img src="img/teatr/azdaks-garden/2_thumb.jpg" data-full="img/teatr/azdaks-garden/2.jpg" class="m-p-g__thumbs-img" alt="Fragment przedstawienia" tabindex="3"/>
-                    <img src="img/teatr/azdaks-garden/3_thumb.jpg" data-full="img/teatr/azdaks-garden/3.jpg" class="m-p-g__thumbs-img" alt="taniec zespołu" tabindex="4"/>
+                    <img src="img/teatr/azdaks-garden/1_thumb.jpg" data-full="img/teatr/azdaks-garden/1.jpg" class="m-p-g__thumbs-img" alt="Grupa teatralna Azdak's Garden" tabindex="5" />
+                    <img src="img/teatr/azdaks-garden/2_thumb.jpg" data-full="img/teatr/azdaks-garden/2.jpg" class="m-p-g__thumbs-img" alt="Fragment przedstawienia" tabindex="6" />
+                    <img src="img/teatr/azdaks-garden/3_thumb.jpg" data-full="img/teatr/azdaks-garden/3.jpg" class="m-p-g__thumbs-img pion" alt="taniec zespołu" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="opis">
+    <section id="textDiv">
+        <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2016</p>
+            </div>
 
-        <div class="info">
-            <h3>Rok założenia / Established</h3>
-            <p>2016</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr</h2>
+                <p>
+                    Teatr Integracyjny Azdak’s Garden składa się z 20 niepełnosprawnych i 20 aktorów.
+                </p>
+                <p>
+                    Naszym celem jest wzrost umiejętności osób niepełnosprawnych, które interesują się aktorstwem. Chcemy też podnieść umiejętności zawodowych aktorów i co się z tym wiąże - wyrównywać różnice społeczne.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="10">
+                <h2>Theatre's staff</h2>
+                <p>
+                    Integrated Theatre "Azdak’s Garden" includes 20 disabled people and 20 professional actors.
+                </p>
+                <p>
+                    Our aim is to rise professional skills for disabled people, which are interested in acting, also rise the experience of professional actors and as a result to make society more equal.
+                </p>
+            </div>
+
+            <div class="info" tabindex="11">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Nasz teatr od jakiegoś czasu prowadzi różnorodne szkolenia dla osób niepełnosprawnych w zakresie kultury mowy, aktorstwa, tańca i muzyki, a także dokonuje wielu prób do różnych gatunków spektakli. Zgodnie z naszą misją zadbaliśmy o to, aby osoby niepełnosprawne robiły to, co lubią, co je uszczęśliwia i co jest świadectwe ich możliwości dla społeczeństwa.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="12">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Our theatre from an established period till today gives various training for disabled people in speech culture, acting, dance and music, and makes many times rehearsals for different genres of plays. According to our mission, we gave care for disabled people to do what they like, what makes them happy and what shows their abilities for society.
+                </p>
+            </div>
+
+            <div class="info" tabindex="13">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl "Opera za trzy grosze” według sztuki Bertholda Brechta, opowiada o trzech głównych potęgach: prostytutce, żebrakach i złodziejach. Nikt nie chce być szczęśliwy, wszyscy walczą o biedę dla kogoś.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="14">
+                <h2>Description of the play</h2>
+                <p>
+                    The play "Three Penny Opera" according to Berthold Brecht play, tells us about the main three power: The prostitute, beggars, and robbers. No one wants to be happy, they all are warring about poverty for someone.
+                </p>
+            </div>
+            <div class="info" tabindex="15">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:azdakisbaghi@gmail.com" id="link">azdakisbaghi@gmail.com</a></p>
+            </div>
         </div>
-
-        <div class="info">
-            <h3>Osoby prowadzące teatr</h3>
-            <p>
-                Teatr Integracyjny Azdak’s Garden składa się z 20 niepełnosprawnych i 20 aktorów.
-            </p>
-            <p>
-                Naszym celem jest wzrost umiejętności osób niepełnosprawnych, które interesują się aktorstwem. Chcemy też podnieść umiejętności zawodowych aktorów i co się z tym wiąże - wyrównywać różnice społeczne.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-           <h3>Theatre's staff</h3>
-            <p>
-                Integrated Theatre "Azdak’s Garden" includes 20 disabled people and 20 professional actors.
-            </p>
-            <p>
-                Our aim is to rise professional skills for disabled people, which are interested in acting, also rise the experience of professional actors and as a result to make society more equal.
-            </p>
-        </div>
-
-        <div class="info">
-            <h3>Opis działalności teatru</h3>
-            <p>
-                Nasz teatr od jakiegoś czasu prowadzi różnorodne szkolenia dla osób niepełnosprawnych w zakresie kultury mowy, aktorstwa, tańca i muzyki, a także dokonuje wielu prób do różnych gatunków spektakli. Zgodnie z naszą misją zadbaliśmy o to, aby osoby niepełnosprawne robiły to, co lubią, co je uszczęśliwia i co jest świadectwe ich możliwości dla społeczeństwa.
-            </p>
-        </div>
-        <div class="info" lang="en" tabindex="9">
-            <span>Description of the theatre</span>
-            <p>
-                Our theatre from an established period till today gives various training for disabled people in speech culture, acting, dance and music, and makes many times rehearsals for different genres of plays. According to our mission, we gave care for disabled people to do what they like, what makes them happy and what shows their abilities for society.
-            </p>
-        </div>
-
-        <div class="info" tabindex="10">
-            <span>Opis Sztuki</span>
-            <p>
-                Spektakl "Opera za trzy grosze” według sztuki Bertholda Brechta, opowiada o trzech głównych potęgach: prostytutce, żebrakach i złodziejach. Nikt nie chce być szczęśliwy, wszyscy walczą o biedę dla kogoś.
-            </p>
-        </div>
-
-        <div class="info" lang="en" tabindex="11">
-            <span>Description of the play</span>
-            <p>
-               The play "Three Penny Opera" according to Berthold Brecht play, tells us about the main three power: The prostitute, beggars, and robbers. No one wants to be happy, they all are warring about poverty for someone.
-            </p>
-        </div>
-        <div class="info" tabindex="12">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:azdakisbaghi@gmail.com" id="link">azdakisbaghi@gmail.com</a></p>
-        </div>
-
-    </div>
-
-    <div class="yt" tabindex="13"><img src="img/cat.jpg"></div>
-
-    <footer tabindex="14">
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <div class="yt" tabindex="16"><img src="img/cat.jpg"></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="17"></li>
+                    <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="18"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="19"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="20"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="21"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="22"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="23"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="24"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="25"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>
