@@ -315,8 +315,8 @@ footer ul li {
 }
 
 #mtt {
-        font-size: 24px
-    }
+    font-size: 24px
+}
 
 @media only screen and (max-width:700px) {
     iframe {
@@ -387,6 +387,7 @@ footer ul li {
 
 .element.toggle p,
 .element.toggle h2,
+.element.toggle .info ol,
 .element.toggle .info ul,
 .element.toggle #link {
     color: black;

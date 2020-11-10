@@ -30,161 +30,168 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych</li>
+                    <li id="teatr">Trupa teatru muzycznego MTT Litewskiego związku ludzi niepelnosprawnych</li>
                     <li id="tytul">Geo Opera „Czlowiek Wirtuwij" czyli „Fi”</li>
-                    <li>Wilno/Vilnius</li>
-                    <li><img src="https://www.countryflags.io/lt/flat/64.png" alt="Litwa"></li>
+                    <li id="tytul">Geo Opera "The Virtuvian Man or "Phi"”</li>
+                    <li id="miasto">Wilno/Vilnius</li>
+                    <li><img src="https://www.countryflags.io/lt/flat/64.png" alt="Litwa" title="Litwa" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/mtt/1_thumb.jpg" data-full="img/teatr/mtt/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/mtt/2_thumb.jpg" data-full="img/teatr/mtt/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/mtt/3_thumb.jpg" data-full="img/teatr/mtt/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/mtt/1_thumb.jpg" data-full="img/teatr/mtt/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/mtt/2_thumb.jpg" data-full="img/teatr/mtt/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/mtt/3_thumb.jpg" data-full="img/teatr/mtt/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2008</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2008</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Snieguole Dikčiūtė - kierownik, kompozytor (manager, composer)</li>
+                    <li>Gasparas Aleksa - autor tekstów (lyrics author)</li>
+                    <li>Audronė Brazauskaitė - artysta (artist)</li>
+                    <li>Sakalas Uždavinys - reżyser (director)</li>
+                    <li>Kęstutis Uždavinys - autor projektu (author of the project)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Działalność teatru</h2>
+                <ol>
+                    <li>„Narodziny świętego“ (tekst Oskaras Milašius, 2008 r.) misterija;</li>
+                    <li>„Przebudzenie“ (tekst Gasparas Aleksa 2009 r.) misterija;</li>
+                    <li>„Dzien pokoju“ (teksty niepelnosprawnych poetów 2010 r.) misterija;</li>
+                    <li>„Biesiady aniolów“ (teksty niepelnosprawnych poetów 2011 r.) misterija;</li>
+                    <li>„Arka Noego“( reżyser Saulė Degutytė 2014 r.) audiowizualna sztuka;</li>
+                    <li>„Niesmiertelna milośč „ (autorzy libreta Violeta Šoblinskaitė i Gasparas Aleksa, reżyser Saulė Degutytė 2015 r.) Inter Opera;</li>
+                    <li>„Rospiewane miasto“ (reżyser Saulė Degutytė 2018 r.) misterija;</li>
+                    <li>„Swiecące ludzie“ (reżyser Vitalij Liubota Kijów Ukraina 2019 r.) misterija;</li>
+                    <li>Geo Opera „Czlowiek Wirtuwij czyli „Fi“ ‚2020 r.</li>
+                </ol>
+            </div>
+
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <ol>
+                    <li>"The birth of a saint" (text by Oskaras Milašius, 2008) misterija;</li>
+                    <li>"Awakening" (text by Gasparas Alexa 2009) misterija;</li>
+                    <li>"Peace day" (texts by disabled poets 2010) misterija;</li>
+                    <li>"Feasts of angels" (texts of disabled poets 2011) misterija;</li>
+                    <li>"Noah's Ark" (director Saulė Degutytė 2014) audiovisual art;</li>
+                    <li>"Immortal love" (librett authors Violeta Šoblinskaitė and Gasparas Aleksa, director Saulė Degutytė 2015) Inter Opera;</li>
+                    <li>"Rospiewane City" (director Saulė Degutytė 2018) misterija;</li>
+                    <li>"Luminous People" (director Vitalij Liubota Kiev Ukraine 2019) mystery;</li>
+                    <li>Geo Opera "Virtuvian Man or Phi ", 2020</li>
+                </ol>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Performans Geo Opera „Człowiek Wirtuwij czyli „Fi” zaprasza widzów do poznania „złotego środka“ piękna sztuki.
+                </p>
+                <p>
+                    Autor idei i muzyki – kompozytor Snieguole Dikčiūtė. Integracyjna muzyka daje unikalną możliwośč wspólpracy między sektorami. W procesie twórczym są stosowane metody terapii muzycznej, malarstwa i ruchu. Improwizacja: aleatoryka, sonoryka, graficzny styl, malarstwo i elementy nowoczesnego tańca.
+                </p>
+                <p>
+                    Pisarz, chirurg Gasparas Aleksa swoje teksty stworzyl wedlug geometryczno – matematycznych wymiarów ciała człowieka i terminów medycznych. W trzynastu scenach – wierszach w których powtarzają się chemiczne formuły ciała człowieka „refreny“, które wykonują aktorzy soliści : Rasa Kulytė, Ieva Stašelytė, Evelina Jocytė, Saulius Čėpla,(Darius Rakauskas), a także trupa teatru muzycznego MTT Litewskiego zwązku ludzi niepełnosprawnych (kierownik Snieguole Dikčiūtė): Svetlana Rybakienė, Česlavas Rybakas, Ernesta Žemaitytė, Danielius Jurevič, Pranas Pliuška, Galina Jurevič, Irena Žemaitienė, Larisa Liubomirova, Kazimieras Styčinskis. Wózkami ludzi niepełnosprawnych i aktorów przy pomocy sprzętu malarskiego są tworzone figury geometryczne i abstrakcja (autor artysta – malarz Audronė Brazauskaitė).
+                </p>
+                <p>
+                    Według stworzonych rysunków graficznych (projektant widowiska Kęstutis Urbonas) tworzy mapę dla partytury muzycznej. Muzykę wykonuje utalentowany zespół „Bravo nosies“ w składzie: Mantvydas Pranulis, Mindaugas Stumbras, Dominykas Snarskis.
+                </p>
+                <p>
+                    Wyjątkowe przedstawienie stworzono na lotnisku Paluknis. W performansie Geo Operze „Czlowiek Wirtuwij czyli „Fi“, uczestniczył latający szybowiec, który pilotował znany aktor i reżyser Sakalas Uždavinys (video).
+                </p>
+            </div>
+
+            <div class="info" tabindex="13" lang="en">
+                <h2>Description of the play</h2>
+                <p>
+                <p>
+                    The Geo Opera performance "The Virtuvian Man or "Phi" invites viewers to get to know the "golden mean" of the beauty of art.
+                </p>
+                <p>
+                    The author of ideas and music - composer Snieguole Dikčiūtė. Inclusive music offers a unique opportunity for collaboration across sectors. In the creative process, methods of music therapy, painting and movement are used. Improvisation: aleatorics, sonorics, graphic style, painting and elements of modern dance.
+                </p>
+                <p>
+                    The writer and surgeon Gasparas Aleksa created his texts according to the geometric and mathematical dimensions of the human body and medical terms. In thirteen scenes - poems in which the chemical formulas of the human body "refrains" are repeated, performed by solo actors: Rasa Kulytė, Ieva Stašelytė, Evelina Jocytė, Saulius Čėpla, (Darius Rakauskas), as well as the troupe of the MTT music theater of the Lithuanian association of disabled people (head of Snieguole Dikčiūtė): Svetlana Rybakienė, Česlavas Rybakas, Ernesta Žemaitytė, Danielius Jurevič, Pranas Pliuška, Galina Jurevič, Irena Žemaitienė, Larisa Liubomirova, Kazimieras Styčinskis. With the help of painting equipment, wheelchairs for disabled people and actors are used to create geometrical figures and abstractions (artist - painter Audronė Brazauskaitė).
+                </p>
+                <p>
+                    According to the created graphic drawings (the designer of the show, Kestutis Urbonas), he creates a map for the musical score. The music is performed by the talented band "Bravo nosies" composed of: Mantvydas Pranulis, Mindaugas Stumbras, Dominykas Snarskis.
+                </p>
+                <p>
+                    A unique performance was created at the Paluknis airport. A flying glider, piloted by the famous actor and director Sakalas Uždavinys (video), participated in the Geo Opera performance "The Virtuvian Man or "Phi".
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:rybakiene.svet@gmail.com" id="link">rybakiene.svet@gmail.com</a></p>
+            </div>
+
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Snieguole Dikčiūtė - kierownik, kompozytor (manager, composer)</li>
-                <li>Gasparas Aleksa - autor tekstów (lyrics author)</li>
-                <li>Audronė Brazauskaitė - artysta (artist)</li>
-                <li>Sakalas Uždavinys - reżyser (director)</li>
-                <li>Kęstutis Uždavinys - autor projektu (author of the project)</li>
-            </ul>
+    </section>
+    <section>
+        <div class="yt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gfuJGOkUCdM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe>
         </div>
-
-        <div class="info">
-            <span>Działalność teatru</span>
-            <ol>
-                <li>„Narodziny świętego“ (tekst Oskaras Milašius, 2008 r.) misterija;</li>
-                <li>„Przebudzenie“ (tekst Gasparas Aleksa 2009 r.) misterija;</li>
-                <li>„Dzien pokoju“ (teksty niepelnosprawnych poetów 2010 r.) misterija;</li>
-                <li>„Biesiady aniolów“ (teksty niepelnosprawnych poetów 2011 r.) misterija;</li>
-                <li>„Arka Noego“( reżyser Saulė Degutytė 2014 r.) audiowizualna sztuka;</li>
-                <li>„Niesmiertelna milośč „ (autorzy libreta Violeta Šoblinskaitė i Gasparas Aleksa, reżyser Saulė Degutytė 2015 r.) Inter Opera;</li>
-                <li>„Rospiewane miasto“ (reżyser Saulė Degutytė 2018 r.) misterija;</li>
-                <li>„Swiecące ludzie“ (reżyser Vitalij Liubota Kijów Ukraina 2019 r.) misterija;</li>
-                <li>Geo Opera „Czlowiek Wirtuwij czyli „Fi“ ‚2020 r.</li>
-            </ol>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <ol>
-                <li>"The birth of a saint" (text by Oskaras Milašius, 2008) misterija;</li>
-                <li>"Awakening" (text by Gasparas Alexa 2009) misterija;</li>
-                <li>"Peace day" (texts by disabled poets 2010) misterija;</li>
-                <li>"Feasts of angels" (texts of disabled poets 2011) misterija;</li>
-                <li>"Noah's Ark" (director Saulė Degutytė 2014) audiovisual art;</li>
-                <li>"Immortal love" (librett authors Violeta Šoblinskaitė and Gasparas Aleksa, director Saulė Degutytė 2015) Inter Opera;</li>
-                <li>"Rospiewane City" (director Saulė Degutytė 2018) misterija;</li>
-                <li>"Luminous People" (director Vitalij Liubota Kiev Ukraine 2019) mystery;</li>
-                <li>Geo Opera "Virtuvian Man or Phi ", 2020</li>
-            </ol>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Performans Geo Opera „Człowiek Wirtuwij czyli „Fi” zaprasza widzów do poznania „złotego środka“ piękna sztuki.
-            </p>
-            <p>
-                Autor idei i muzyki – kompozytor Snieguole Dikčiūtė. Integracyjna muzyka daje unikalną możliwośč wspólpracy między sektorami. W procesie twórczym są stosowane metody terapii muzycznej, malarstwa i ruchu. Improwizacja: aleatoryka, sonoryka, graficzny styl, malarstwo i elementy nowoczesnego tańca.
-            </p>
-            <p>
-                Pisarz, chirurg Gasparas Aleksa swoje teksty stworzyl wedlug geometryczno – matematycznych wymiarów ciała człowieka i terminów medycznych. W trzynastu scenach – wierszach w których powtarzają się chemiczne formuły ciała człowieka „refreny“, które wykonują aktorzy soliści : Rasa Kulytė, Ieva Stašelytė, Evelina Jocytė, Saulius Čėpla,(Darius Rakauskas), a także trupa teatru muzycznego MTT Litewskiego zwązku ludzi niepełnosprawnych (kierownik Snieguole Dikčiūtė): Svetlana Rybakienė, Česlavas Rybakas, Ernesta Žemaitytė, Danielius Jurevič, Pranas Pliuška, Galina Jurevič, Irena Žemaitienė, Larisa Liubomirova, Kazimieras Styčinskis. Wózkami ludzi niepełnosprawnych i aktorów przy pomocy sprzętu malarskiego są tworzone figury geometryczne i abstrakcja (autor artysta – malarz Audronė Brazauskaitė).
-            </p>
-            <p>
-                Według stworzonych rysunków graficznych (projektant widowiska Kęstutis Urbonas) tworzy mapę dla partytury muzycznej. Muzykę wykonuje utalentowany zespół „Bravo nosies“ w składzie: Mantvydas Pranulis, Mindaugas Stumbras, Dominykas Snarskis.
-            </p>
-            <p>
-                Wyjątkowe przedstawienie stworzono na lotnisku Paluknis. W performansie Geo Operze „Czlowiek Wirtuwij czyli „Fi“, uczestniczył latający szybowiec, który pilotował znany aktor i reżyser Sakalas Uždavinys (video).
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-               <p>
-                The Geo Opera performance "The Virtuvian Man or "Phi" invites viewers to get to know the "golden mean" of the beauty of art.
-            </p>
-            <p>
-                The author of ideas and music - composer Snieguole Dikčiūtė. Inclusive music offers a unique opportunity for collaboration across sectors. In the creative process, methods of music therapy, painting and movement are used. Improvisation: aleatorics, sonorics, graphic style, painting and elements of modern dance.
-            </p>
-            <p>
-                The writer and surgeon Gasparas Aleksa created his texts according to the geometric and mathematical dimensions of the human body and medical terms. In thirteen scenes - poems in which the chemical formulas of the human body "refrains" are repeated, performed by solo actors: Rasa Kulytė, Ieva Stašelytė, Evelina Jocytė, Saulius Čėpla, (Darius Rakauskas), as well as the troupe of the MTT music theater of the Lithuanian association of disabled people (head of Snieguole Dikčiūtė): Svetlana Rybakienė, Česlavas Rybakas, Ernesta Žemaitytė, Danielius Jurevič, Pranas Pliuška, Galina Jurevič, Irena Žemaitienė, Larisa Liubomirova, Kazimieras Styčinskis. With the help of painting equipment, wheelchairs for disabled people and actors are used to create geometrical figures and abstractions (artist - painter Audronė Brazauskaitė).
-            </p>
-            <p>
-                According to the created graphic drawings (the designer of the show, Kestutis Urbonas), he creates a map for the musical score. The music is performed by the talented band "Bravo nosies" composed of: Mantvydas Pranulis, Mindaugas Stumbras, Dominykas Snarskis.
-            </p>
-            <p>
-                A unique performance was created at the Paluknis airport. A flying glider, piloted by the famous actor and director Sakalas Uždavinys (video), participated in the Geo Opera performance "The Virtuvian Man or "Phi".
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:rybakiene.svet@gmail.com" id="link">rybakiene.svet@gmail.com</a></p>
-        </div>
-
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/gfuJGOkUCdM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

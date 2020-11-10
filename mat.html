@@ -30,132 +30,137 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="0">A-</button>
+        <button id="fontPlusBtn" tabindex="1">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+    </section>
 
-    </header>
+    <section id="topbox" tabindex="3">
+        <header>
+            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="4">
                 <ul>
-                    <li>Młodzieżowa Akademia Teatralna</li>
+                    <li id="teatr">Młodzieżowa Akademia Teatralna</li>
                     <li id="tytul">Znaki czasu</li>
-                    <li>Gdańsk</li>
-                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska"></li>
+                    <li id="tytul">Signs of the times</li>
+                    <li id="miasto">Gdańsk</li>
+                    <li><img src="https://www.countryflags.io/pl/flat/64.png" alt="Polska" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/mat/1_thumb.jpg" data-full="img/teatr/mat/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/mat/2_thumb.jpg" data-full="img/teatr/mat/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/mat/3_thumb.jpg" data-full="img/teatr/mat/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/mat/1_thumb.jpg" data-full="img/teatr/mat/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="5" />
+                    <img src="img/teatr/mat/2_thumb.jpg" data-full="img/teatr/mat/2.jpg" class="m-p-g__thumbs-img" alt="Kolejny fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/mat/3_thumb.jpg" data-full="img/teatr/mat/3.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie grupowe" tabindex="7" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="8">
+                <h2>Rok założenia / Established</h2>
+                <p>2006</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>2006</p>
+            <div class="info" tabindex="9">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Robert Cyrta - reżyser (director)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="10">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Jest to zespół teatralny składający się z uczniów XX Liceum Ogólnokształcącego im. Zbigniewa Herberta w Gdańsku poznających arkana sztuki scenicznej. Młodzieżowa Akademia Teatralna powstała w 2006 roku w Gdańsku w ramach programu "Edukacji teatralnej" w XX LO, gdzie prowadzone są lekcje teatru.
+                </p>
+                <p>
+                    Młodzieżowa Akademia Teatralna przez swoje spektakle próbuje wciągnąć widza w rozpędzonym świecie we wspólne poszukiwanie tego "czegoś", co w życiu najważniejsze i piękne.
+                </p>
+                <p>
+                    Założyciel, instruktor teatralny i reżyser: Robert Cyrta
+                </p>
+            </div>
+            <div class="info" tabindex="11" lang="en">
+                <h2>Description of the theatre</h2>
+                <p>
+                    It is a theater group consisting of students of the Secondary School No. XX in Gdańsk, learning the secrets of the performing arts. The Młodzieżowa Akademia Teatralna (Youth Theatre Academy) was established in 2006 in Gdańsk as part of the "Theater Education" program at Secondary School No. XX, where theater lessons are conducted.
+                </p>
+                <p>
+                    Through its performances, the Młodzieżowa Akademia Teatralna tries to involve the viewer in a fast-paced world in a joint search for that "something" that is most important and beautiful in life.
+                </p>
+                <p>
+                    Founder, theatre instructor and director: Robert Cyrta
+                </p>
+            </div>
+
+            <div class="info" tabindex="12">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Spektakl symboliczny i plastyczny jest opowieścią o trudnych wyborach, o przeżywaniu własnego życia, o próbie odnalezienia się w dzisiejszej rzeczywistości poszukując najważniejszych wartości, szukając znaków i wskazówek, oraz o przeszkodach w odnalezieniu siebie. Bo jest najtrudniejszą rzeczą w życiu pozostać sobą, mimo wszystko… Potrzebna jest odwaga!
+                </p>
+                <p>
+                    Scenariusz – Robert Cyrta i Zespół
+                </p>
+            </div>
+
+            <div class="info" tabindex="13" lang="en">
+                <h2>Description of the play</h2>
+                <p>
+                    The symbolic and artistic performance is a story about difficult choices, about living your own life, about trying to find yourself in today's reality by searching for the most important values, looking for signs and clues, and about obstacles in finding yourself. Because it's the hardest thing in life to remain yourself, after all... It takes courage!
+                </p>
+                <p>
+                    Script - Robert Cyrta and the Group
+                </p>
+            </div>
+            <div class="info" tabindex="14">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
+            </div>
         </div>
+    </section>
 
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Robert Cyrta - reżyser (director)</li>
-            </ul>
-        </div>
+    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/SN9Uqb7RBzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
 
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Jest to zespół teatralny składający się z uczniów XX Liceum Ogólnokształcącego im. Zbigniewa Herberta w Gdańsku poznających arkana sztuki scenicznej. Młodzieżowa Akademia Teatralna powstała w 2006 roku w Gdańsku w ramach programu "Edukacji teatralnej" w XX LO, gdzie prowadzone są lekcje teatru.
-            </p>
-            <p>
-                Młodzieżowa Akademia Teatralna przez swoje spektakle próbuje wciągnąć widza w rozpędzonym świecie we wspólne poszukiwanie tego "czegoś", co w życiu najważniejsze i piękne.
-            </p>
-            <p>
-                Założyciel, instruktor teatralny i reżyser: Robert Cyrta
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                It is a theater group consisting of students of the Secondary School No. XX in Gdańsk, learning the secrets of the performing arts. The Młodzieżowa Akademia Teatralna (Youth Theatre Academy) was established in 2006 in Gdańsk as part of the "Theater Education" program at Secondary School No. XX, where theater lessons are conducted.
-            </p>
-            <p>
-                Through its performances, the Młodzieżowa Akademia Teatralna tries to involve the viewer in a fast-paced world in a joint search for that "something" that is most important and beautiful in life.
-            </p>
-            <p>
-                Founder, theatre instructor and director: Robert Cyrta
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Spektakl symboliczny i plastyczny jest opowieścią o trudnych wyborach, o przeżywaniu własnego życia, o próbie odnalezienia się w dzisiejszej rzeczywistości poszukując najważniejszych wartości, szukając znaków i wskazówek, oraz o przeszkodach w odnalezieniu siebie. Bo jest najtrudniejszą rzeczą w życiu pozostać sobą, mimo wszystko… Potrzebna jest odwaga!
-            </p>
-            <p>
-                Scenariusz – Robert Cyrta i Zespół
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                The symbolic and artistic performance is a story about difficult choices, about living your own life, about trying to find yourself in today's reality by searching for the most important values, looking for signs and clues, and about obstacles in finding yourself. Because it's the hardest thing in life to remain yourself, after all... It takes courage!
-            </p>
-            <p>
-                Script - Robert Cyrta and the Group
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
-        </div>
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/SN9Uqb7RBzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>
