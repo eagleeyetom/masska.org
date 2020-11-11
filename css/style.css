@@ -13,6 +13,7 @@ body {
 
 .accessibility {
     float: right;
+    align-items: flex-end;
 }
 
 button {
@@ -24,11 +25,18 @@ button {
 }
 
 button:hover {
-    background: #4a4541;
+    background-color: #4a4541 !important;
 }
 
 #fontMinusBtn {
     font-size: small;
+
+}
+
+#fontMinusBtn:hover,
+#fontPlusBtn:hover {
+    background-color: #4a4541;
+
 }
 
 #fontPlusBtn {
@@ -214,7 +222,6 @@ footer ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-transform: uppercase
 }
 
@@ -424,9 +431,19 @@ footer ul li {
     position: relative;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 1.5em;
+    color: black !important
 }
 
 #blank {
     width: 400px;
     height: 200px
+}
+
+.wcag {
+    border: 0;
+}
+
+hr {
+    border-bottom: 5px solid gray;
 }

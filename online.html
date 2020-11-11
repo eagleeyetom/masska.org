@@ -29,6 +29,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
 </head>
@@ -36,9 +37,9 @@
 <body id="resultDiv" class="element toggle">
 
     <section class="accessibility">
-        <button id="fontMinusBtn" tabindex="1">A-</button>
-        <button id="fontPlusBtn" tabindex="2">A+</button>
-        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="3">
+        <button id="fontMinusBtn" tabindex="1" class="wcag">A-</button>
+        <button id="fontPlusBtn" tabindex="2" class="wcag">A+</button>
+        <button class="fas fa-adjust wcag" onclick="switchColor()" id="kontrast" tabindex="3"></button>
     </section>
 
     <section id="topbox">
@@ -47,7 +48,7 @@
         </header>
     </section>
     <section id="textDiv">
-        <h1 class="sekcja">Spektakle / Plays</h1>
+        <h2 class="sekcja">Spektakle / Plays</h2>
         <section>
             <div class="galeria">
                 <div class="row">
@@ -222,7 +223,7 @@
             </div>
 
         </section>
-        <h1 class="sekcja">Koncert / Concert</h1>
+        <h2 class="sekcja">Koncert / Concert</h2>
         <section>
             <div class="galeria">
                 <div class="row">
@@ -269,7 +270,7 @@
             </div>
         </section>
 
-        <h1 class="sekcja">Film "Amatorzy" / "Amateurs" movie</h1>
+        <h2 class="sekcja">Film "Amatorzy" / "Amateurs" movie</h2>
         <section>
             <div class="galeria">
                 <div class="row">
