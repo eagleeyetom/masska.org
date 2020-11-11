@@ -38,20 +38,20 @@
 <body id="resultDiv" class="element toggle">
 
     <section class="accessibility">
-        <button id="fontMinusBtn" tabindex="0">A-</button>
-        <button id="fontPlusBtn" tabindex="1">A+</button>
-        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+        <button id="fontMinusBtn" tabindex="1">A-</button>
+        <button id="fontPlusBtn" tabindex="2">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="3">
     </section>
 
-    <section id="topbox" tabindex="3">
+    <section id="topbox">
         <header>
-            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+            <a href="index.html" tabindex="4"><img src="img/banner.jpg" alt="banner" class="banner"></a>
         </header>
     </section>
 
     <section id="textDiv">
         <div class="profil">
-            <div class="nazwa" tabindex="4">
+            <div class="nazwa" tabindex="5">
                 <ul>
                     <li id="teatr">Walny-Teatr</li>
                     <li id="tytul">Gould - Wariacje</li>
@@ -62,9 +62,9 @@
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/walny/1_thumb.jpg" data-full="img/teatr/walny/1.jpg" class="m-p-g__thumbs-img" />
-                    <!--img src="img/teatr/lo-men/2_thumb.jpg" data-full="img/teatr/lo-men/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/lo-men/3_thumb.jpg" data-full="img/teatr/lo-men/3.jpg" class="m-p-g__thumbs-img" /-->
+                    <img src="img/teatr/walny/1_thumb.jpg" data-full="img/teatr/walny/1.jpg" class="m-p-g__thumbs-img" alt="Zdjęcie artysty" tabindex="6" />
+                    <img src="img/teatr/walny/2_thumb.jpg" data-full="img/teatr/walny/2.jpg" class="m-p-g__thumbs-img" alt="Manekin chodzący po pianinie" tabindex="7" />
+                    <img src="img/teatr/walny/3_thumb.jpg" data-full="img/teatr/walny/3.jpg" class="m-p-g__thumbs-img" alt="Artysta i manekin przy pianinie" tabindex="8" />
 
                 </div>
 
@@ -75,19 +75,19 @@
     <section id="textDiv">
         <div class="opis">
 
-            <div class="info">
+            <div class="info" tabindex="9">
                 <h2>Rok założenia / Established</h2>
                 <p>1995</p>
             </div>
 
-            <div class="info">
+            <div class="info" tabindex="10">
                 <h2>Osoby prowadzące teatr / Theatre's staff</h2>
                 <ul>
                     <li>Adam Walny</li>
                 </ul>
             </div>
 
-            <div class="info">
+            <div class="info" tabindex="11">
                 <h2>Opis działalności teatru</h2>
                 <p>
                     Absolwent Wydziału Reżyserii Teatru lalek Akademii Teatralnej w Warszawie, dyplomowany snycerz. Od 1995 roku prowadzi autorski teatr przedmiotu Walny-Teatr. W 2007 roku założył Instytut Teatru Przedmiotu – objazdowy zespół edukacji teatralnej.
@@ -108,7 +108,7 @@
                     Walny-Teatr działa od 1995 roku. W tym czasie zagrał na ponad 300 festiwalach w kraju i na świecie. Zrealizował 18 autorskich spektakli w pionierskich technikach teatru przedmiotu: marionety podwodne, pałuby, kino manualne, figury-instrumenty, nadmarionety klawiszowe, obiekty wielofunkcyjne. Teatr działa zarówno w warunkach studyjnych jak plenerowych. W instytucjach oraz niezależnie. Prowadzi działalność zarówno laboratoryjną jak edukacyjną. W 2012 roku spektaklem Opus Hamlet otwierał scenę lalkową Zamku Elsynor. Spektakle z udziałem rozwiązań lalkowych teatru Walnego grają zarówno teatry dramatyczne, muzyczne, teatry tańca i pantomimy oraz tradycyjne teatry lalkowe.
                 </p>
             </div>
-            <div class="info" lang="en">
+            <div class="info" lang="en" tabindex="12">
                 <h2>Description of the theatre</h2>
                 <p>
                     A qualified woodcarver, Adam Walny graduated from Theatre Academy in Warsaw (directing puppet theatre), and from 1995 on, he’s been running his own Walny-Teatr object theatre. In 2007, he launched Instytut Teatru Przedmiotu – a travelling group devoted to theatre education. In 2012, his Hamlet was the puppet stage opening act during the festival held in the castle of Elsinore.
@@ -124,7 +124,7 @@
                 </p>
             </div>
 
-            <div class="info">
+            <div class="info" tabindex="13">
                 <h2>Opis Sztuki</h2>
                 <p>
                     Jan Sebastian Bach, wściekły z powodu pomysłu wysłania jego „Wariacji Goldbergowskich” w kosmos, postanawia pozbawić ludzkość swojej spuścizny i podarować ją tym, którzy słuchać jej będą w kosmosie.
@@ -134,7 +134,7 @@
                 </p>
             </div>
 
-            <div class="info" lang="en">
+            <div class="info" lang="en" tabindex="14">
                 <h2>Description of the play</h2>
                 <p>
                     Jan Sebastian Bach, furious with the idea of sending his "Goldberg Variations" into space, decides to deprive humanity of its legacy and give it to those who will listen to it in space.
@@ -145,7 +145,7 @@
             </div>
             <div class="info">
                 <h2>Kontakt / Contact</h2>
-                <p><a href="mailto:walny-teatr@wp.pl" id="link">walny-teatr@wp.pl</a></p>
+                <p><a href="mailto:walny-teatr@wp.pl" id="link" tabindex="15">walny-teatr@wp.pl</a></p>
             </div>
 
         </div>
@@ -159,16 +159,16 @@
         <footer>
             <div>
                 <ul>
-                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
-                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
-                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
-                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
-                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
-                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
-                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
-                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer"></li>
                 </ul>
-                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer"></div>
             </div>
         </footer>
     </section>

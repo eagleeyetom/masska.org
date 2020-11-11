@@ -30,126 +30,131 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/material-photo-gallery.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
+<body id="resultDiv" class="element toggle">
 
-    <header>
-        <a href="index.html"><img src="img/banner.jpg" alt="banner"></a>
+    <section class="accessibility">
+        <button id="fontMinusBtn" tabindex="1">A-</button>
+        <button id="fontPlusBtn" tabindex="2">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="3">
+    </section>
 
-    </header>
+    <section id="topbox">
+        <header>
+            <a href="index.html" tabindex="4"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+        </header>
+    </section>
 
-    <div>
+    <section id="textDiv">
         <div class="profil">
-            <div class="nazwa">
+            <div class="nazwa" tabindex="5">
                 <ul>
                     <li>RambaZamba Theater</li>
-                    <li id="tytul">Heroes. Mythos Basquiat, just for one day.</li>
-                    <li>Berlin</li>
-                    <li><img src="https://www.countryflags.io/de/flat/64.png" alt="Niemcy"></li>
+                    <li id="tytul" lang="en">Heroes. Mythos Basquiat, just for one day.</li>
+                    <li id="tytul">Bohaterowie. Mythos Basquiat, tylko na jeden dzień.</li>
+                    <li id="miasto">Berlin</li>
+                    <li><img src="https://www.countryflags.io/de/flat/64.png" alt="Niemcy" title="Niemcy" id="flag"></li>
                 </ul>
             </div>
 
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                    <img src="img/teatr/rambazamba/1_thumb.jpg" data-full="img/teatr/rambazamba/1.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/rambazamba/2_thumb.jpg" data-full="img/teatr/rambazamba/2.jpg" class="m-p-g__thumbs-img" />
-                    <img src="img/teatr/rambazamba/3_thumb.jpg" data-full="img/teatr/rambazamba/3.jpg" class="m-p-g__thumbs-img" />
+                    <img src="img/teatr/rambazamba/1_thumb.jpg" data-full="img/teatr/rambazamba/1.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="6" />
+                    <img src="img/teatr/rambazamba/2_thumb.jpg" data-full="img/teatr/rambazamba/2.jpg" class="m-p-g__thumbs-img" alt="Aktorki stojące tyłem do publiczności i aktro w czerwonym stroju" tabindex="7" />
+                    <img src="img/teatr/rambazamba/3_thumb.jpg" data-full="img/teatr/rambazamba/3.jpg" class="m-p-g__thumbs-img" alt="Taniec aktorki" tabindex="8" />
 
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="textDiv">
+        <div class="opis">
 
-    <div class="opis">
+            <div class="info" tabindex="9">
+                <h2 id="established">Rok założenia / Established</h2>
+                <p>1990</p>
+            </div>
 
-        <div class="info">
-            <span id="established">Rok założenia / Established</span>
-            <p>1990</p>
+            <div class="info" tabindex="10">
+                <h2>Osoby prowadzące teatr / Theatre's staff</h2>
+                <ul>
+                    <li>Lioba Breitsprecher, Grit Burmeister, Mario Gaulke, Juliana Götze, Moritz Höhne, Hans-Harald Janke, Sascha Perthel, Hieu Pham, Andreas Rosenzweig - tancerze (dancers)</li>
+                    <li>Matthias Geserick (Musiker), Sara Lu, Rúben Nsue, Leo Solter - goście (guests)</li>
+                    <li>Sara Lu, Rubén Nsue - choreografowie (choreography)</li>
+                    <li>Jacob Höhne - design sceny (stage design)</li>
+                    <li>Jacob Höhne - dramaturg</li>
+                    <li>Beatrix Brandler - kostiumy (costumes)</li>
+                    <li>Leo Solter - muzyka (music)</li>
+                </ul>
+            </div>
+
+            <div class="info" tabindex="11">
+                <h2>Opis działalności teatru</h2>
+                <p>
+                    Teatr RambaZamba to otwarty w 1990 roku teatr integracyjny z Berlina, który pracuje zarówno z niepełnosprawnymi, jak i pełnosprawnymi aktorami i aktorkami.
+                </p>
+                <p>
+                    Rocznie wystawia około 100 przedstawień i regularnie prezentuje swoje prace na krajowych i międzynarodowych festiwalach.
+                </p>
+            </div>
+            <div class="info" lang="en" tabindex="12">
+                <h2>Description of the theatre</h2>
+                <p>
+                    Teatr RambaZamba Theater is a 1990 established inclusive theatre in Berlin that works with both disabled and non-disabled actors and actresses.
+                </p>
+                <p>
+                    It stages around 100 shows a year and regularly shows its pieces on national and international festivals.
+                </p>
+            </div>
+
+            <div class="info" tabindex="13">
+                <h2>Opis Sztuki</h2>
+                <p>
+                    Wraz z choreografami i tancerzami Sara Lu und Rubén Nsue, zespół RambaZamba odkrywa życie i mit Jeana-Michela Basquiata. Spektakl bada sprzeczności sukcesu i rzeczywistości w migoczącej przestrzeni, której towarzyszą jazzowe hip-hopowe dźwięki Leo Soltera i Matthiasa Gesericka.
+                </p>
+            </div>
+
+            <div class="info" lang="en" tabindex="14">
+                <h2>Description of the play</h2>
+                <p>
+                    Together with choreographers and dancers Sara Lu und Rubén Nsue the RambaZamba ensemble discovers the life and myth of Jean-Michel Basquiat. The piece investigates the contradictions of success and reality in a shimmering space accompanied by jazzy hip hop sounds by Leo Solter and Matthias Geserick.
+                </p>
+            </div>
+            <div class="info">
+                <h2>Kontakt / Contact</h2>
+                <p><a href="mailto:j.prigge@rambazamba-theater.de" id="link" tabindex="15">j.prigge@rambazamba-theater.de</a></p>
+            </div>
         </div>
-
-        <div class="info"><span>Osoby prowadzące teatr / Theatre's staff</span>
-            <ul>
-                <li>Lioba Breitsprecher, Grit Burmeister, Mario Gaulke, Juliana Götze, Moritz Höhne, Hans-Harald Janke, Sascha Perthel, Hieu Pham, Andreas Rosenzweig - tancerze (dancers)</li>
-                <li>Matthias Geserick (Musiker), Sara Lu, Rúben Nsue, Leo Solter - goście (guests)</li>
-                <li>Sara Lu, Rubén Nsue - choreografowie (choreography)</li>
-                <li>Jacob Höhne - design sceny (stage design)</li>
-                <li>Jacob Höhne - dramaturg</li>
-                <li>Beatrix Brandler - kostiumy (costumes)</li>
-                <li>Leo Solter - muzyka (music)</li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <span>Opis działalności teatru</span>
-            <p>
-                Teatr RambaZamba to otwarty w 1990 roku teatr integracyjny z Berlina, który pracuje zarówno z niepełnosprawnymi, jak i pełnosprawnymi aktorami i aktorkami.
-            </p>
-            <p>
-                Rocznie wystawia około 100 przedstawień i regularnie prezentuje swoje prace na krajowych i międzynarodowych festiwalach.
-            </p>
-        </div>
-        <div class="info" lang="en">
-            <span>Description of the theatre</span>
-            <p>
-                Teatr RambaZamba Theater is a 1990 established inclusive theatre in Berlin that works with both disabled and non-disabled actors and actresses.
-            </p>
-            <p>
-                It stages around 100 shows a year and regularly shows its pieces on national and international festivals.
-            </p>
-        </div>
-
-        <div class="info">
-            <span>Opis Sztuki</span>
-            <p>
-                Wraz z choreografami i tancerzami Sara Lu und Rubén Nsue, zespół RambaZamba odkrywa życie i mit Jeana-Michela Basquiata. Spektakl bada sprzeczności sukcesu i rzeczywistości w migoczącej przestrzeni, której towarzyszą jazzowe hip-hopowe dźwięki Leo Soltera i Matthiasa Gesericka.
-            </p>
-        </div>
-
-        <div class="info" lang="en">
-            <span>Description of the play</span>
-            <p>
-                Together with choreographers and dancers Sara Lu und Rubén Nsue the RambaZamba ensemble discovers the life and myth of Jean-Michel Basquiat. The piece investigates the contradictions of success and reality in a shimmering space accompanied by jazzy hip hop sounds by Leo Solter and Matthias Geserick.
-            </p>
-        </div>
-        <div class="info">
-            <span>Kontakt / Contact</span>
-            <p><a href="mailto:j.prigge@rambazamba-theater.de" id="link">j.prigge@rambazamba-theater.de</a></p>
-        </div>
-    </div>
-
-
-    <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/i0Jq0XpmllU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    <footer>
-        <div>
-            <ul>
-                <li><img src="img/org.jpg" alt="Organizatorzy"></li>
-                <li><a href="http://www.ekspresja.org" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image"></a></li>
-                <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image"></a></li>
-                <li><img src="img/wsp.jpg" alt="Współpraca"></li>
-                <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image"></a></li>
-                <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image"></a></li>
-                <li><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="gmina"></li>
-            </ul>
-            <div><img src="img/miasto.jpg" alt=" Gmina Miasta Sopotu" id="mobile-gmina"></div>
-        </div>
-    </footer>
+    </section>
+    <section>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/i0Jq0XpmllU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </section>
+    <section>
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer"></li>
+                </ul>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer"></div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/material-photo-gallery.js"></script>
-
-    <script>
-        var elem = document.querySelector('.m-p-g');
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var gallery = new MaterialPhotoGallery(elem);
-        });
-
-    </script>
+    <script src="js/all-scripts.js"></script>
 </body>
 
 </html>

@@ -20,11 +20,11 @@ button {
     cursor: pointer;
     font-weight: 700;
     transition-duration: .4s;
+    color: #fff;
 }
 
 button:hover {
     background: #4a4541;
-    color: #fff;
 }
 
 #fontMinusBtn {
@@ -347,6 +347,11 @@ footer ul li {
         max-height: 40% !important;
         width: 40% !important
     }
+
+    #fritsch,
+    #mtt {
+        font-size: 0.7em !important
+    }
 }
 
 .element {
@@ -419,4 +424,9 @@ footer ul li {
     position: relative;
     vertical-align: middle;
     cursor: pointer;
+}
+
+#blank {
+    width: 400px;
+    height: 200px
 }

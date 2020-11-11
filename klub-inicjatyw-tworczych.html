@@ -36,20 +36,20 @@
 <body id="resultDiv" class="element toggle">
 
     <section class="accessibility">
-        <button id="fontMinusBtn" tabindex="0">A-</button>
-        <button id="fontPlusBtn" tabindex="1">A+</button>
-        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="2">
+        <button id="fontMinusBtn" tabindex="1">A-</button>
+        <button id="fontPlusBtn" tabindex="2">A+</button>
+        <img src="img/contrast.png" id="kontrast" onclick="switchColor()" tabindex="3">
     </section>
 
-    <section id="topbox" tabindex="3">
+    <section id="topbox">
         <header>
-            <a href="index.html"><img src="img/banner.jpg" alt="banner" class="banner"></a>
+            <a href="index.html" tabindex="4"><img src="img/banner.jpg" alt="banner" class="banner"></a>
         </header>
     </section>
 
     <section id="textDiv">
         <div class="profil">
-            <div class="nazwa" tabindex="4">
+            <div class="nazwa" tabindex="5">
                 <ul>
                     <li id="teatr">Klub Inicjatyw Twórczych</li>
                     <li id="tytul">Okno</li>
@@ -62,9 +62,9 @@
             <div class="m-p-g">
                 <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
 
-                    <img src="img/teatr/klub-inicjatyw-tworczych/1_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/1.jpg" class="m-p-g__thumbs-img" alt="Dwójka aktorów stojąca przy oknie" tabindex="5" />
-                    <img src="img/teatr/klub-inicjatyw-tworczych/2_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/2.jpg" class="m-p-g__thumbs-img" alt="Grupa teatralna Klub Inicjatyw Twórczych" tabindex="6" />
-                    <img src="img/teatr/klub-inicjatyw-tworczych/3_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/3.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="7" />
+                    <img src="img/teatr/klub-inicjatyw-tworczych/1_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/1.jpg" class="m-p-g__thumbs-img" alt="Dwójka aktorów stojąca przy oknie" tabindex="6" />
+                    <img src="img/teatr/klub-inicjatyw-tworczych/2_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/2.jpg" class="m-p-g__thumbs-img" alt="Grupa teatralna Klub Inicjatyw Twórczych" tabindex="7" />
+                    <img src="img/teatr/klub-inicjatyw-tworczych/3_thumb.jpg" data-full="img/teatr/klub-inicjatyw-tworczych/3.jpg" class="m-p-g__thumbs-img" alt="Fragment spektaklu" tabindex="8" />
                 </div>
 
                 <div class="m-p-g__fullscreen"></div>
@@ -74,19 +74,19 @@
     <section id="textDiv">
         <div class="opis">
 
-            <div class="info" tabindex="8">
+            <div class="info" tabindex="9">
                 <h2 id="established">Rok założenia / Established</h2>
                 <p>2014</p>
             </div>
 
-            <div class="info" tabindex="9">
+            <div class="info" tabindex="10">
                 <h2>Osoby prowadzące teatr / Theatre's staff</h2>
                 <ul>
                     <li>Robert Cyrta - reżyser (director)</li>
                 </ul>
             </div>
 
-            <div class="info" tabindex="10">
+            <div class="info" tabindex="11">
                 <h2>Opis działalności teatru</h2>
                 <p>
                     Klub Inicjatyw Twórczych jest grupą młodych ludzi zaangażowanych w artystyczny projekt profilaktyczny, współpracujący z Gdańskim Centrum Profilaktyki Uzależnień i PaT-em tworząc prezentacje teatralne, oraz organizując Pomorski Festiwal Humoru i Teatru "HIT" w Gdańsku tworząc przestrzeń dla młodych ludzi w rozwijaniu swoich pasji artystycznych.</p>
@@ -97,7 +97,7 @@
                     Założyciel, instruktor teatralny i reżyser: Robert Cyrta
                 </p>
             </div>
-            <div class="info" lang="en" tabindex="11">
+            <div class="info" lang="en" tabindex="12">
                 <h2>Description of the theatre</h2>
                 <p>
                     Klub Inicjatyw Twórczych (Club of Creating Initiatives) is a group of young people involved in an artistic prophylactic project, in cooperation with the Gdańsk Addiction Prevention Center and PaT by creating theater presentations, and organizing the Pomeranian Festival of Humour and Theater "HIT" in Gdańsk, creating a space for young people to develop their artistic passions.
@@ -112,7 +112,7 @@
                 </p>
             </div>
 
-            <div class="info" tabindex="12">
+            <div class="info" tabindex="13">
                 <h2>Opis Sztuki</h2>
                 <p>
                     Spektakl oparty na tekstach Ireneusza Iredyńskiego, opowiada o trudnych relacjach małżeńskich, kiedy własne oczekiwania zaczynają rywalizować z uczuciami, miłością… Czy jesteśmy gotowi na przyjęcie prawdy o sobie, kiedy opada kurtyna mojego egoizmu...
@@ -124,7 +124,7 @@
                 </p>
             </div>
 
-            <div class="info" lang="en" tabindex="13">
+            <div class="info" lang="en" tabindex="14">
                 <h2>Description of the play</h2>
                 <p>
                     The performance, based on the texts of Ireneusz Iredyński, tells about difficult marital relations, when our own expectations start to compete with feelings, love... Are we ready to accept the truth about ourselves when the curtain of selfishness falls...
@@ -136,30 +136,30 @@
                     Number of actors: 2 (Asia Majewska and Szymon Król)
                 </p>
             </div>
-            <div class="info" tabindex="14">
+            <div class="info">
                 <h2>Kontakt / Contact</h2>
-                <p><a href="mailto:robertcyrta@wp.pl" id="link">robertcyrta@wp.pl</a></p>
+                <p><a href="mailto:robertcyrta@wp.pl" id="link" tabindex="15">robertcyrta@wp.pl</a></p>
             </div>
 
         </div>
     </section>
     <section>
-        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/vPPCMF5otO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="15"></iframe></div>
+        <div class="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/vPPCMF5otO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </section>
     <section>
         <footer>
             <div>
                 <ul>
-                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy" tabindex="16"></li>
-                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji" tabindex="17"></a></li>
-                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+" tabindex="18"></a></li>
-                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer" tabindex="19"></li>
-                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image" tabindex="20"></a></li>
-                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej" tabindex="21"></a></li>
-                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot" tabindex="22"></a></li>
-                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer" tabindex="23"></li>
+                    <li><img src="img/org.jpg" alt="Organizatorzy" class="footer" alt="Organizatorzy"></li>
+                    <li><a href="https://www.facebook.com/StowarzyszenieNaDrodzeEkspresji" target="_blank"><img src="img/snde.jpg" alt="Stowarzyszenie Na Drodze Ekspresji" class="image" title="Stowarzyszenie Na Drodze Ekspresji"></a></li>
+                    <li><a href="https://www.facebook.com/grupaimplus/" target="_blank"><img src="img/implus.jpg" alt="Grupa IM+" class="image" title="Grupa IM+"></a></li>
+                    <li><img src="img/wsp.jpg" alt="Współpraca" class="footer"></li>
+                    <li><a href="https://mopssopot.pl" target="_blank"><img src="img/mops.jpg" alt="Miejski Ośrodek Pomocy Społecznej" title="Miejski Ośrodek Pomocy Społecznej" class="image"></a></li>
+                    <li><a href="https://pkps.org.pl" target="_blank"><img src="img/pkps.jpg" alt="Polski Komitet Pomocy Społecznej" class="image" title="Polski Komitet Pomocy Społecznej"></a></li>
+                    <li><a href="https://www.sopot.pl" target="_blank"><img src="img/sopot.jpg" alt="Miasto Sopot" class="image" title="Miasto Sopot"></a></li>
+                    <li><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="gmina" class="footer"></li>
                 </ul>
-                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer" tabindex="24"></div>
+                <div><img src="img/miasto.jpg" alt="Gmina Miasta Sopotu" id="mobile-gmina" class="footer"></div>
             </div>
         </footer>
     </section>
